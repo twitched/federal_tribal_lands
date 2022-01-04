@@ -1,0 +1,2032 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: National Atlas of the United States
+        Publication_Date: 201403
+        Title: 1:1,000,000-Scale Streams of the United States
+        Edition: 2
+        Geospatial_Data_Presentation_Form: Vector digital data
+        Publication_Information:
+          Publication_Place: Rolla, MO
+          Publisher: National Atlas of the United States
+        Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+    Description:
+      Abstract: 
+        This map layer shows streams of the United States, Puerto Rico, and the U.S. Virgin Islands.  The 
+        map layer was produced primarily from the Medium-Resolution and High-Resolution National 
+        Hydrography Dataset NHDFlowline feature classes, through feature selection and cartographic 
+        generalization based on reference to published small-scale ancillary data sets.  This is a revised 
+        version of the August 2012 map layer.
+
+      Purpose: 
+        These data are intended for geographic display and analysis at the national level, and for large 
+        regional areas.  The data should be displayed and analyzed at scales appropriate 
+        for 1:1,000,000-scale data.  No responsibility is assumed by the National Atlas of the United 
+        States in the use of these data.
+
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Single_Date/Time:
+          Calendar_Date: 201403
+      Currentness_Reference: Publication date
+    Status:
+      Progress: Complete
+      Maintenance_and_Update_Frequency: Irregular
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: -173
+        East_Bounding_Coordinate: -64
+        North_Bounding_Coordinate: 72
+        South_Bounding_Coordinate: 17
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+        Theme_Keyword: Inland Waters
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: Water
+        Theme_Keyword: Hydrology
+        Theme_Keyword: Drainage
+        Theme_Keyword: Hydrography
+        Theme_Keyword: Streams
+        Theme_Keyword: Rivers
+      Place:
+        Place_Keyword_Thesaurus:
+          Organization for International Standards, 2008, ISO 3166 Country Codes,
+          https://www.iso.org/obp/ui/#search
+        Place_Keyword: United States
+        Place_Keyword: US
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: USA
+      Place:
+        Place_Keyword_Thesaurus: 
+          U.S. Department of Commerce; 2013; American National Standards Institute (ANSI) Codes for States, 
+          the District of Columbia, Puerto Rico, and the Insular Areas of the United States; 
+          Washington, DC; U.S. Census Bureau; http://www.census.gov/geo/reference/ansi_statetables.html.
+        Place_Keyword: Alabama
+        Place_Keyword: Alaska
+        Place_Keyword: Arizona
+        Place_Keyword: Arkansas
+        Place_Keyword: California
+        Place_Keyword: Colorado
+        Place_Keyword: Connecticut
+        Place_Keyword: Delaware
+        Place_Keyword: District of Columbia
+        Place_Keyword: Florida
+        Place_Keyword: Georgia
+        Place_Keyword: Hawaii
+        Place_Keyword: Idaho
+        Place_Keyword: Illinois
+        Place_Keyword: Indiana
+        Place_Keyword: Iowa
+        Place_Keyword: Kansas
+        Place_Keyword: Kentucky
+        Place_Keyword: Louisiana
+        Place_Keyword: Maine
+        Place_Keyword: Maryland
+        Place_Keyword: Massachusetts
+        Place_Keyword: Michigan
+        Place_Keyword: Minnesota
+        Place_Keyword: Mississippi
+        Place_Keyword: Missouri
+        Place_Keyword: Montana
+        Place_Keyword: Nebraska
+        Place_Keyword: Nevada
+        Place_Keyword: New Hampshire
+        Place_Keyword: New Jersey
+        Place_Keyword: New Mexico
+        Place_Keyword: New York
+        Place_Keyword: North Carolina
+        Place_Keyword: North Dakota
+        Place_Keyword: Ohio
+        Place_Keyword: Oklahoma
+        Place_Keyword: Oregon
+        Place_Keyword: Pennsylvania
+        Place_Keyword: Rhode Island
+        Place_Keyword: South Carolina
+        Place_Keyword: South Dakota
+        Place_Keyword: Tennessee
+        Place_Keyword: Texas
+        Place_Keyword: Utah
+        Place_Keyword: Vermont
+        Place_Keyword: Virginia
+        Place_Keyword: Washington
+        Place_Keyword: West Virginia
+        Place_Keyword: Wisconsin
+        Place_Keyword: Wyoming
+        Place_Keyword: Puerto Rico
+        Place_Keyword: Virgin Islands
+        Place_Keyword: U.S. Virgin Islands
+    Access_Constraints: None.
+    Use_Constraints: 
+      None.  Acknowledgment of the National Atlas of the United States of America would be appreciated in 
+      products derived from these data.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing and physical address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive 
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+        Contact_Instructions:
+          For questions about this map layer or metadata, please contact the National Atlas using the 
+          information above, or through the U.S. Geological Survey contact page at 
+          http://www.usgs.gov/ask/.  For distribution questions, please see the Distribution Information 
+          elsewhere in this metadata. 
+    Native_Data_Set_Environment: 
+      Microsoft Windows 7 Enterprise Version 6.1.7601 (Build 7601); ESRI ArcGIS 10.0.5.4400
+  Data_Quality_Information:
+    Attribute_Accuracy:
+      Attribute_Accuracy_Report:
+        All attributes were checked to make sure their values are in the correct domains.  No null (blank) 
+        values are present except in the Name attribute.
+
+        The Stream_ID was checked for duplicates and nulls.  All features have a unique Stream_ID.
+
+        Names were checked for invalid characters and foreign characters.  Streams with no name available 
+        have a null value.
+
+        Selections by attribute and location were used to ensure the Region code matches the region the 
+        stream is in.
+
+        Length was calculated using the North America Albers Equal Area Conic projection.  Features have 
+        been generalized so the length of a stream may be different from a measurement in a larger-scale 
+        data set.
+
+    Logical_Consistency_Report: 
+      Streams were checked for topological consistency using ArcGIS, to ensure there were no overlapping, 
+      intersecting, or multi-part features.  ArcGIS topological checks were also used to verify correct 
+      spatial relationships between streams and county, State, and national boundaries.  Streams were 
+      checked at coastlines to ensure their endpoints intersected the coastline.  Selections by attribute 
+      and location were used to verify feature types based on their relationship to waterbodies.  A 
+      geometric network of streams was built and connectivity was checked through upstream and downstream 
+      traces.  
+    Completeness_Report: 
+      This map layer contains streams of the United States, Puerto Rico, and the U.S. Virgin Islands.  Only 
+      streams appropriate for a 1:1,000,000-scale data set are included.   Preference was given to natural 
+      waterways, although a limited number of canals and aqueducts are included.  Boundaries for the map 
+      layer are generally the 1:1,000,000-scale national boundaries and coastlines. The Intracoastal 
+      Waterway is the exception to this, in that it is outside the coastline.
+    Positional_Accuracy:
+      Horizontal_Positional_Accuracy:
+        Horizontal_Positional_Accuracy_Report: 
+          Streams in the 48 conterminous states and Hawaii are in approximately the same locations as in 
+          the Medium-Resolution National Hydrography Dataset NHDFlowline feature class used as a source. 
+          Streams in Alaska, Puerto Rico, and the U.S. Virgin Islands are in approximately the same 
+          locations as in the High-Resolution National Hydrography Dataset NHDFlowline feature class used 
+          as a source.  However, many processes and editing tasks resulted in the movement of streams from 
+          their original positions, including: extending or trimming streams to intersect the coastline or 
+          international boundaries; moving streams to follow county, State, and international boundaries 
+          where  the boundary is coincident with the stream; moving streams 300 meters from transportation 
+          features if the two were parallel; increasing the gap between headwater streams in neighboring 
+          watersheds; adjusting streams to their proper route through waterbodies; splitting streams at 
+          waterbody boundaries; snapping streams to streams in neighboring hydrologic subregions and 
+          regions; moving streams to ensure network connectivity; and moving streams to match imagery.
+
+    Lineage:
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: 1999
+            Title: Medium-Resolution National Hydrography Dataset NHDFlowline
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Publication_Information:
+              Publication_Place: Reston, VA
+              Publisher: U.S. Geological Survey
+            Online_Linkage: ftp://nhdftp.usgs.gov/DataSets/Staged/SubRegions/FileGDB/
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 1999
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Source_Contribution: 
+          Spatial and attribute information.  Served as one of the primary sources from which 
+          the 1:1,000,000-scale map layer was created.  Used for Hawaii and the 48 conterminous States.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: 1999
+            Title: High-Resolution National Hydrography Dataset NHDFlowline
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Publication_Information:
+              Publication_Place: Reston, VA
+              Publisher: U.S. Geological Survey
+            Online_Linkage: ftp://nhdftp.usgs.gov/DataSets/Staged/SubRegions/FileGDB/
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 1999
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Contribution: 
+          Spatial and attribute information.  Served as one of the primary sources from which 
+          the 1:1,000,000-scale map layer was created.  Used for Alaska, Puerto Rico, and 
+          the U.S. Virgin Islands.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 200512
+            Title: Streams and Waterbodies of the United States
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Publication_Information:
+              Publication_Place: Reston, VA
+              Publisher: National Atlas of the United States
+            Online_Linkage: http://nationalatlas.gov/atlasftp.html
+        Source_Scale_Denominator: 2000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Range_of_Dates/Times:
+              Beginning_Date: 1995
+              Ending_Date: 2002
+          Source_Currentness_Reference: Ground condition
+        Source_Citation_Abbreviation: National Atlas Streams 1:2M
+        Source_Contribution: 
+          Spatial and attribute information.  Used to identify additional features to include in the map 
+          layer.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Imagery and Mapping Agency (NIMA)
+            Publication_Date: 1998
+            Title: VMAP0 Hydrography River/Stream
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              For more information on accessing VMAP0 data, please see 
+              http://earth-info.nga.mil/publications/vmap0.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 1998
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: VMAP0 Streams 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Used to identify additional features to include in the map 
+          layer.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: American Geographical Society
+            Originator: Army Map Service
+            Originator: Canada Department of Energy, Mines, and Resources
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: International Map of the World
+            Geospatial_Data_Presentation_Form: Map
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Ground condition
+        Source_Citation_Abbreviation: IMW 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Used to identify additional features to include in the map 
+          layer.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown 
+            Title: 
+              Elevation Derivatives for National Applications (EDNA) Flow Accumulation
+            Geospatial_Data_Presentation_Form: Raster digital data
+            Online_Linkage: http://edna.usgs.gov/Edna/datalayers/flow_accum.asp
+        Source_Scale_Denominator: 24000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: EDNA Flow Accumulation
+        Source_Contribution: 
+          Spatial information.  Used to determine the most prominent flow path when more than one 
+          downstream reach was present.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: Digital Orthophoto Quarter Quadrangles
+            Geospatial_Data_Presentation_Form: Raster digital data
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: USGS DOQQ
+        Source_Contribution: 
+          Spatial information.  Used to determine the most prominent flow path when more than one 
+          downstream reach was present.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale Coastline of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Coastline 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  The coastlines were used as the limit for streams entering 
+          oceans or the Great Lakes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale National Boundaries of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas National Boundaries 1:1M
+        Source_Contribution: 
+          Spatial information.  The national boundary was used to locate streams that intersect the borders 
+          of Canada and Mexico.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Environmental Systems Research Institute - ESRI
+            Publication_Date: 2009
+            Title: ESRI USA Topo Maps Map Service
+            Geospatial_Data_Presentation_Form: Raster digital data
+            Online_Linkage: 
+              http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2009
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:500,000-Scale State Base Map Series
+        Source_Scale_Denominator: 500000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: State Base Maps 1:500K
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:24,000-Scale Topographic Map Series
+        Source_Scale_Denominator: 24000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Paper Topo Maps 1:24K
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:63,360-Scale Topographic Map Series
+        Source_Scale_Denominator: 63360
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Paper Topo Maps 1:63,360
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:100,000-Scale Topographic Map Series
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Paper Topo Maps 1:100K
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:250,000-Scale Topographic Map Series
+        Source_Scale_Denominator: 250000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Paper Topo Maps 1:250K
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Forest Service
+            Publication_Date: Unknown
+            Title: National Forest Maps
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Forest Maps
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: Unknown
+            Title: Sectional Maps
+        Source_Scale_Denominator: 2000000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Range_of_Dates/Times:
+              Beginning_Date: 1972
+              Ending_Date: 1973
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Sectional Maps 1:2M
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: 1:1,000,000-Scale State Base Map Series
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: State Base Maps 1:1M
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: Unknown
+            Title: Alaska State Base Map
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Alaska State Base Map
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: State Transportation Departments
+            Publication_Date: Unknown
+            Title: (variable) Official State Highway Maps
+        Type_of_Source_Media: Paper
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Official State Highway Maps
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Google
+            Publication_Date: Unknown
+            Title: Google Maps
+            Online_Linkage: http://maps.google.com/
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Google Maps
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Google
+            Publication_Date: Unknown
+            Title: Google Earth
+            Online_Linkage: http://earth.google.com/
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Google Earth
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale Waterbodies and Wetlands of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Waterbodies 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Used to determine the location of streams during manual 
+          editing, and used to determine attributes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale Major Roads of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Roads 1:1M
+        Source_Contribution: 
+          Spatial information.  Streams were offset from roads if the two were parallel and within 300 
+          meters of each other.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale Railroads of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Railroads 1:1M
+        Source_Contribution: 
+          Spatial information.  Streams were offset from railroads if the two were parallel and within 300 
+          meters of each other.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Environmental Systems Research Institute - ESRI
+            Publication_Date: 2009
+            Title: ESRI Imagery World 2D Map Service
+            Geospatial_Data_Presentation_Form: Raster digital data
+            Online_Linkage: 
+              http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2009
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale County Boundaries of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Counties 1:1M
+        Source_Contribution: 
+          Spatial information.  Used to determine the location of streams that are coincident with county 
+          boundaries.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: Unpublished material
+            Title: Streamflow Gaging Stations of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Internal file
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2012
+          Source_Currentness_Reference: Compilation date
+        Source_Citation_Abbreviation: National Atlas Stream Gages 1:1M
+        Source_Contribution: 
+          Spatial information.  Used to identify additional features to include in the map layer.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA) 
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2006
+            Title: National Hydrography Dataset Plus NHDFlowline
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              To locate the flowline data at the listed URL, select a data region.  The flowline data are 
+              included in the NHD zip files.
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/NHDPlusV1_data.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2006
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V1 NHDFlowline 
+        Source_Contribution: 
+          Spatial information.  Used as a guide to determine location of streams during manual editing 
+          processes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale State Boundaries of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas States 1:1M
+        Source_Contribution: 
+          Attribute information.  Used to determine the State code and FIPS code.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: International Steering Committee for Global Mapping
+            Publication_Date: 2011
+            Title: Global Map Specifications Version 2.1
+            Edition: 2.1
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2011
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Global Map Specifications Version 2.1
+        Source_Contribution: 
+          Attribute information.  Used to define the Global Map attributes and determine their values.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201208
+            Title: 1:1,000,000-Scale Streams of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201208
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Streams 1:1M 2012
+        Source_Contribution: Spatial and attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: 
+              Government of Canada; Natural Resources Canada; Earth Sciences Sector; Canada Centre for 
+              Mapping and Earth Observation
+            Publication_Date: 20131108
+            Title: Atlas of Canada National Scale Data 1:1,000,000 - Rivers
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: 
+              http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/87bb794c-eabf-5eea-bdb3-61d0338d9594
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 20131108
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Atlas of Canada Rivers 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Streams were aligned with Canadian streams. Used to determine 
+          Strahler stream order of streams entering the United States from Canada.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA) 
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2012
+            Title: National Hydrography Dataset Plus Version 2 NHDFlowline
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              To locate the flowline data at the listed URL, select a data region.  The flowline data are 
+              included in the NHDSnapshot zip files.
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/NHDPlusV2_data.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2012
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V2 NHDFlowline 
+        Source_Contribution: 
+          Spatial and attribute information.  Used as a guide to determine location of streams during 
+          manual editing processes.   Used to update names and reach codes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale Major Roads of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Roads 1:1M 2014
+        Source_Contribution: 
+          Spatial information.  Streams were offset from roads if the two were parallel and within 300 
+          meters of each other.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale Railroads of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Railroads 1:1M 2014
+        Source_Contribution: 
+          Spatial information.  Streams were offset from railroads if the two were parallel and within 300 
+          meters of each other.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale National Boundaries of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas National Boundaries 1:1M 2014
+        Source_Contribution: 
+          Spatial information.  The national boundary was used to locate streams that intersect the borders 
+          of Canada and Mexico.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale State Boundaries of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas States 1:1M 2014
+        Source_Contribution: 
+          Attribute information.  Used to determine the State code and FIPS code.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale County Boundaries of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Counties 1:1M 2014
+        Source_Contribution: 
+          Spatial information.  Used to determine the location of streams that are coincident with county 
+          boundaries.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale Coastline of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Coastline 1:1M 2014
+        Source_Contribution: 
+          Spatial and attribute information.  The coastlines were used as the limit for streams entering 
+          oceans or the Great Lakes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale Waterbodies and Wetlands of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Waterbodies 1:1M 2014
+        Source_Contribution: 
+          Spatial and attribute information.  Used to determine the location of streams during manual 
+          editing, and used to determine attributes.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: Streamflow Gaging Stations of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Stream Gages 1:1M 2014
+        Source_Contribution: 
+          Spatial information.  Used to identify additional features to include in the map layer.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: The National Map
+            Publication_Date: Unknown
+            Title: Geographic Names (GNIS) Map Service
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: 
+              http://viewer.nationalmap.gov/example/services/serviceList.html
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Unknown
+        Source_Citation_Abbreviation: GNIS Map Service
+        Source_Contribution: Attribute information.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Dirección General de Geografía - INEGI(ed.)
+            Publication_Date: 20000703
+            Title: Conjunto de Datos Vectoriales de la Serie Topográfica Escala 1:1,000,000
+            Publication_Information:
+              Publication_Place: Aguascalientes, Ags., México
+              Publisher: INEGI
+            Online_Linkage: http://www.inegi.org.mx/
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Range_of_Dates/Times:
+              Beginning_Date: 19930100
+              Ending_Date: 19970400
+          Source_Currentness_Reference: Ground condition
+        Source_Citation_Abbreviation: INEGI Corriente de Agua 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Used to determine Strahler stream order of streams entering 
+          the United States from Mexico.
+
+      Process_Step:
+        Process_Description:
+          Feature Selection
+
+          The Medium-Resolution NHDFlowline data served as the primary source data for streams in the 48 
+          conterminous States and Hawaii.  The High-Resolution NHDFlowline data served as the primary 
+          source data for streams in Alaska, Puerto Rico, and the U.S. Virgin Islands.  Headwater streams 
+          in these two sources were selected if the same headwater was present in National Atlas 
+          Streams 1:2M, VMAP0 Streams 1:1M, or the IMW 1:1M. 
+
+          The downstream trace tool, a custom tool developed specifically for this project, uses ArcObjects 
+          to apply an algorithm to the indicated headwater streams to determine the preferred downstream 
+          route on the NHD geometric network.  The tool analyzes the stream name, flow direction, and 
+          feature type (for example, stream, canal, or artificial path.)  If there was only one downstream 
+          segment, it was included in the map layer.  If there was more than one downstream segment, a set 
+          of criteria was used to decide which of the downstream segments should be included in the map 
+          layer.  Priority was given to named segments, segments coded as streams, and segments with flow 
+          direction.  If a downstream segment could not be identified with the trace tool, a segment was 
+          selected manually using EDNA Flow Accumulation data and USGS DOQQs to support decisions.  
+
+          After all possible streams were selected, the network was examined for connectivity.  
+          Connectivity was checked visually and by tracing upstream on the proposed 1:1,000,000-scale 
+          (1:1M) network.
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline 
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:2M
+        Source_Used_Citation_Abbreviation: VMAP0 Streams 1:1M
+        Source_Used_Citation_Abbreviation: IMW 1:1M
+        Source_Used_Citation_Abbreviation: EDNA Flow Accumulation
+        Source_Used_Citation_Abbreviation: USGS DOQQ
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Cartographic Generalization
+
+          All streams selected in the feature-selection process were exported as a new feature class, and 
+          then simplified using the Bend Simplify algorithm with a tolerance of 500 meters.  The feature 
+          class was further simplified using the Douglas-Peucker algorithm with a 1-meter tolerance to 
+          remove any extraneous vertices.  The new, simplified and generalized data set was then tested for 
+          network connectivity.  A new regional geometric network was created, and upstream traces were 
+          used to search for missing or disconnected streams.
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with 1:1M Coastline and National Boundaries
+
+          The simplified streams were snapped to National Atlas Coastline 1:1M.  Streams along the 
+          terrestrial international boundaries were snapped to the National Atlas National Boundaries 1:1M.  
+          Streams that form part of the international boundary were aligned with the boundary so that the 
+          two features are coincident.   The data were checked for topological consistency using ArcGIS, to 
+          ensure that streams terminated at the coastline or terrestrial international boundary or were 
+          aligned with the international boundary.
+        Source_Used_Citation_Abbreviation: National Atlas Coastline 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas National Boundaries 1:1M
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Calculation of ReachCode and ComID
+
+          In the 48 conterminous States and Hawaii, the ReachCode and ComID were imported from 
+          Medium-Resolution NHDFlowline.  In Alaska, Puerto Rico, and the U.S. Virgin Islands, the 
+          ReachCode and ComID were imported from High-Resolution NHDFlowline.  In cases where streams were 
+          added manually and where no ReachCode or ComID was available, a value of -999 was entered.
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Calculation of Name
+
+          The name of the stream generally comes from the GNIS_Name attribute in Medium-Resolution 
+          NHDFlowline or High-Resolution NHDFlowline.  Streams without a GNIS name were named if their 
+          upstream and downstream neighbors had the same name.  Additional streams were named manually 
+          based on stream names in other small-, medium-, and large-scale maps.
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:2M
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: State Base Maps 1:500K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:24K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:63,360
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:100K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:250K
+        Source_Used_Citation_Abbreviation: National Forest Maps
+        Source_Used_Citation_Abbreviation: National Atlas Sectional Maps 1:2M
+        Source_Used_Citation_Abbreviation: State Base Maps 1:1M
+        Source_Used_Citation_Abbreviation: Alaska State Base Map
+        Source_Used_Citation_Abbreviation: Official State Highway Maps
+        Source_Used_Citation_Abbreviation: Google Maps
+        Source_Used_Citation_Abbreviation: Google Earth
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Correction of Stream Density Disparities
+
+          Selecting headwaters based on streams in the IMW map sheets created stream density disparities at 
+          the borders of the IMW sheets.  Streams were deleted in the densest regions to create a more 
+          uniform level of density.  Criteria for deletion included the type of stream, name attributes, 
+          and the length to confluence.
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          Cartographic Review - Phase 1
+
+          Cartographers reviewed streams by comparing them to existing small-, medium-, and large-scale 
+          data sets and maps.  The name, location, extent, and feature type were examined and 
+          recommendations for deletions, modifications, and additions were incorporated.
+        Source_Used_Citation_Abbreviation: State Base Maps 1:500K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:24K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:63,360
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:100K
+        Source_Used_Citation_Abbreviation: Paper Topo Maps 1:250K
+        Source_Used_Citation_Abbreviation: National Atlas Sectional Maps 1:2M
+        Source_Used_Citation_Abbreviation: State Base Maps 1:1M
+        Source_Used_Citation_Abbreviation: Official State Highway Maps
+        Source_Used_Citation_Abbreviation: Google Maps
+        Source_Used_Citation_Abbreviation: Google Earth
+        Process_Date: 2008
+
+      Process_Step:
+        Process_Description:
+          Addition of the Intracoastal Waterway
+
+          The Intracoastal Waterway was added to the streams, snapped to existing streams, and split at the 
+          coastline.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:2M
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Process_Date: 2008
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with 1:1M Waterbodies
+
+          During the generalization process, many streams became misaligned with the waterbodies they flow 
+          through.  The streams and waterbody limits were corrected so that the streams flow through the 
+          waterbodies.  This was done for all waterbodies except Swamp or Marsh.
+        Source_Used_Citation_Abbreviation: National Atlas Waterbodies 1:1M
+        Process_Date: 2010
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with 1:1M Transportation Features
+
+          Streams that were parallel to transportation features in the National Atlas 1:1M Roads and 
+          Railroads were moved away from the transportation features to ensure that there was a 300-meter 
+          gap between the two types of features.  Imagery and topographic maps were used to guide placement 
+          of streams.
+        Source_Used_Citation_Abbreviation: National Atlas Roads 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Railroads 1:1M
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Process_Date: 2010
+
+      Process_Step:
+        Process_Description:
+          Cartographic Review - Phase 2
+
+          National Atlas 1:1M map layers were reviewed together to check for features that needed to be 
+          added, deleted, or modified, and to determine if the distances between features were appropriate 
+          for the product scale.
+        Source_Used_Citation_Abbreviation: National Atlas Coastline 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas National Boundaries 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Roads 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Railroads 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Waterbodies 1:1M
+        Process_Date: 2011
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with 1:1M Counties
+
+          Streams that are on a county line were aligned with the county line so that the two are 
+          coincident.  Imagery and topographic maps were used to guide placement of streams.  The data 
+          were checked for topological consistency to ensure that the alignment was accurate.
+        Source_Used_Citation_Abbreviation: National Atlas Counties 1:1M
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Process_Date: 2011
+
+      Process_Step:
+        Process_Description:
+          Addition of Streams Selected Based on National Atlas 1:1M Stream Gages
+
+          Streams were added to the map layer if a gage located on the stream was included in the National 
+          Atlas Stream Gages 1:1M map layer.  The new streams were integrated with existing streams, 
+          waterbodies, coastlines, transportation features, and boundaries.
+        Source_Used_Citation_Abbreviation: National Atlas Stream Gages 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Coastline 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Counties 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Roads 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Railroads 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas Waterbodies 1:1M
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with 1:1M Stream Gages
+
+          Stream gages were snapped to stream segments.  If the ComID and ReachCode for the stream gage did 
+          not match the ComID and ReachCode of the stream then the gages and streams were compared to 
+          imagery, topographic maps, NHDPlus V1 NHDFlowline features, or High-Resolution NHDFlowline 
+          features to determine which feature should be moved.  Imagery and topographic maps were used to 
+          guide placement of streams.
+        Source_Used_Citation_Abbreviation: National Atlas Stream Gages 1:1M
+        Source_Used_Citation_Abbreviation: NHDPlus V1 NHDFlowline 
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Construction of a National Geometric Network of Streams
+
+          A geometric network was created for the streams.  The direction of flow is the same as the 
+          direction in which the streams are digitized.  The network was traced upstream to check 
+          connectivity.  Disconnected segments were connected and line directions were reversed when 
+          necessary.  Initially all features were enabled as part of the network.  Some features were 
+          disabled because they are offshore, have indeterminate flow, have locks, or otherwise prevented 
+          the network from tracing upstream or downstream properly.  The majority of disabled segments are 
+          either the Intracoastal Waterway or canals.  NHDPlus V1 NHDFlowline, High-Resolution NHDFlowline, 
+          imagery, and topographic maps were used to guide editing in places where connectivity or flow 
+          direction was unclear.
+        Source_Used_Citation_Abbreviation: NHDPlus V1 NHDFlowline 
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Enabled
+
+          The Enabled attribute exists for geometric networking purposes.  The values are 1 for true 
+          (enabled) and 0 for false (disabled).  The calculation of the Enabled attribute was done 
+          concurrently with the construction and verification of the geometric network (described 
+          above.)  Initially all features were enabled.  Some features were disabled because they are 
+          offshore, have indeterminate flow, or have locks.  Other segments that prevented the network from 
+          tracing upstream or downstream properly were disabled.
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Stream Order
+
+          Once network connectivity was established the RivEX tool was used to calculate the Strahler 
+          stream order value.  Streams were processed by hydrologic regions or subregions and, if 
+          necessary, adjusted based on the stream order in upstream regions.  Streams that are disabled 
+          were not included in the stream order calculation.
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of From_node and To_node
+
+          The From_node and To_node values were calculated for all features within the map layer using the 
+          Renode Polylines tool in the ETGeoWizards toolset.  Values for the nodes are unique across the 
+          entire United States.
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Feature Types 
+
+          The Feature attribute describes the type of linear water feature.  With the exception of 
+          Artificial Path, the set of feature types comes from the National Atlas Streams 1:2M map layer.  
+          The feature attribute was initially calculated based on the National Hydrography Dataset 
+          NHDFlowline FCode using the following crosswalk:
+          >Aqueduct: NHD FCode starts with 428
+          >Canal: NHD FCode starts with 336
+          >Intracoastal Waterway: Coded manually
+          >Stream: NHD FCode is 46006 or 46000
+          >Stream Intermittent: NHD FCode is 46003
+          >Artificial Path: NHD FCode starts with 558 or 334
+          >
+          
+          Since the waterbodies in the 1:1M data are not identical to the waterbodies in the source NHD 
+          data, the Artificial Paths had to be recalculated based on their spatial relationship with 1:1M 
+          waterbodies.  Stream segments were split at the limits of waterbodies, except for swamps/marshes.  
+          Segments inside the waterbody were given the value Artificial Path.  Segments outside the 
+          waterbody were coded as Stream, Stream Intermittent, or Canal based on the values of neighboring 
+          segments.  Streams inside glaciers were removed.  Imagery and topographic maps were used to guide 
+          decisions.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:2M
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: National Atlas Waterbodies 1:1M
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of F_Code
+
+          The F_Code is a numeric code indicating the type of water feature described by the feature label.  
+          F_Codes 4, 5, 6, 8, and 14 are found in the National Atlas Streams 1:2M map layer.  F_Code 23 was 
+          created because there was no equivalent feature type in the National Atlas Streams 1:2M map 
+          layer.  The following crosswalk was used to create F_Codes from the Feature values.
+          >F_code    Feature value
+          >-----------------------------
+          >4         Stream
+          >5         Canal
+          >6         Aqueduct
+          >8         Intracoastal Waterway
+          >14        Stream Intermittent
+          >23        Artificial Path
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:2M
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Region
+
+          The Region attribute value is equivalent to the 2-digit Hydrologic Unit Code.  It was calculated 
+          from the 4-digit Medium-Resolution or High-Resolution NHDFlowline Subregion code. Leading zeroes 
+          are not shown.
+        Source_Used_Citation_Abbreviation: Medium-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of State Abbreviation and State FIPS codes
+
+          The streams were intersected with the National Atlas States 1:1M map layer to transfer the State 
+          abbreviations and FIPS codes.  The intersected layer was analyzed to determine which streams fell 
+          in multiple States.  For streams crossing State boundaries, the State abbreviations and FIPS 
+          codes were concatenated with a hyphen to include information from all applicable States.
+        Source_Used_Citation_Abbreviation: National Atlas States 1:1M
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Stream_ID
+
+          The Stream_ID is the unique identifier for the features.  The starting number is 10,000,001.
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Length
+
+          The data were converted to a North America Albers Equal Area Conic projection.  Length in miles 
+          was calculated for each line segment, then the data were converted back to geographic 
+          coordinates.
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Calculation of Global Map Attributes
+
+          The attributes GM_f_code, GM_hyc, GM_lit, GM_nam, GM_soc, GM_exs, and GM_loc are attributes for 
+          Global Map.  They facilitate the use of National Atlas 1:1M data with other nations' Global Map 
+          data. 
+          
+          GM_f_code was calculated from the Feature attribute using the following crosswalk:
+          >Aqueduct, Canal, Intracoastal Waterway: GM_f_code = BH000
+          >Stream, Stream Intermittent, Artificial Path: GM_f_code = BH140
+
+          GM_hyc was calculated using the following crosswalk:
+          >Aqueduct, Canal, Intracoastal Waterway: -999 (GM_hyc not applicable)
+          >Stream Intermittent: GM_hyc = 6
+          >Stream, Artificial Path: GM_hyc = 8
+
+          GM_lit was calculated using the following crosswalk:
+          >Aqueduct, Canal, Intracoastal Waterway: -999 (GM_lit not applicable)
+          >Stream, Stream Intermittent: GM_lit = 1
+          >Artificial Path: GM_lit = 2
+
+          GM_nam was calculated from the Name attribute.  If the name is null (blank) then the GM_nam is 
+          UNK.  Aqueduct, Canal, and Intracoastal Waterway were given the value of -999 (GM_nam not 
+          applicable).
+
+          GM_soc is the abbreviation for the United States listed in the Global Map Specifications 
+          Version 2.1.
+
+          GM_exs was calculated using the following crosswalk:
+          >Stream, Stream Intermittent, Artificial Path: -999 (GM_exs not applicable)
+          >Aqueduct, Canal, Intracoastal Waterway: GM_exs = 1
+
+          GM_loc was calculated using the following crosswalk:
+          >Stream, Stream Intermittent, Artificial Path: -999 (GM_loc not applicable)
+          >Aqueduct, Canal, Intracoastal Waterway: GM_loc = 0
+        Source_Used_Citation_Abbreviation: Global Map Specifications Version 2.1
+        Process_Date: 2012
+        Source_Produced_Citation_Abbreviation: National Atlas Streams 1:1M 2012
+
+      Process_Step:
+        Process_Description:
+          Harmonization of United States Streams with Canadian 1:1M Streams Along the United States-Canada 
+          Border
+
+          Streams that intersect or follow the United States-Canada border were aligned with Canadian 
+          streams at the border in order to facilitate seamless cross-border mapping.  This was a 
+          back-and-forth process in which each country reviewed the other's border streams, made 
+          adjustments to their own streams, proposed changes for streams in the other country, and acted on 
+          proposals for changes in their own country.  Types of modifications included snapping ends of 
+          streams to each other at the border, reshaping streams near the border, creating greater 
+          separation between headwaters that begin near the border, adding streams if the corresponding 
+          stream exists in the other data set, and deleting streams if no corresponding stream exists in 
+          the other data set.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2012
+        Source_Used_Citation_Abbreviation: Atlas of Canada Rivers 1:1M
+        Source_Used_Citation_Abbreviation: National Atlas National Boundaries 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Coastline 1:1M 2014
+        Source_Used_Citation_Abbreviation: NHDPlus V2 NHDFlowline 
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Used_Citation_Abbreviation: Google Earth
+        Process_Date: 2012
+
+      Process_Step:
+        Process_Description:
+          Integration of Streams with Version 2 of the 1:1M National Boundaries, Roads, Railroads, 
+          Counties, Waterbodies, and Gages
+
+          Version 2 of the transportation, boundaries, and hydrographic features (coastline, waterbodies, 
+          and gages) 1:1M National Atlas data sets contain minor adjustments along the Canada-U.S. border 
+          and in other places where the data were improved or corrected.  Streams were modified to remain 
+          aligned with these map layers.  Topology, geometric network connectivity, and attributes were 
+          verified or recalculated for modified streams.  Imagery and topographic maps were used to guide 
+          decisions.
+        Source_Used_Citation_Abbreviation: National Atlas National Boundaries 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Counties 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Railroads 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Roads 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Stream Gages 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Waterbodies 1:1M 2014
+        Source_Used_Citation_Abbreviation: National Atlas Coastline 1:1M 2014
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Process_Date: 2013
+
+      Process_Step:
+        Process_Description:
+          Update of Names and Reach Codes
+
+          Stream names and reach codes were initially determined in 2007 but had to be updated to match the 
+          Medium-Resolution Flowline, High Resolution NHDFlowline, and NHDPlus V2 NHDFlowline, all of which 
+          have incorporated changes to names and reach codes since the creation of version 1 of the 
+          National Atlas Streams 1:1M.  The ComID was used to link the streams with different resolutions 
+          and versions of NHD and NHDPlus.  NHD has switched from using the ComID to using a 
+          Permanent_Identifier, but in most cases the value is the same as the former ComID. 
+
+          Streams in the conterminous States (Hydrologic Regions 1 through 18) were joined by ComID with 
+          the NHDFlowline feature class in NHDPlus V2 NHDFlowline, and the GNIS_Name and ReachCode from 
+          that source were transferred to the stream Name and ReachCode fields.  If there was no 
+          corresponding ComID, then the stream retained its original Name and ReachCode.  
+
+          Streams in Alaska and Puerto Rico (Hydrologic Regions 19 and 21) were joined by ComID and 
+          Permanent Identifier with the NHDFlowline feature class in High-Resolution NHDFlowline and the 
+          GNIS_Name and ReachCode from that source were transferred to the stream Name and ReachCode 
+          fields.  If there was no corresponding Permanent_Identifier, then the stream retained its 
+          original Name and ReachCode.  
+
+          Streams in Hawaii (Hydrologic Region 20) were joined by ComID with the NHDFlowline feature class 
+          in Medium-Resolution NHDFlowline and the GNIS_Name from that source was transferred to the 
+          streams.  ReachCodes were identical for streams and the NHDFlowlines in Medium-Resolution 
+          NHDFlowline.  No comparison could be made between High-Resolution NHDFlowline in Hawaii and the 
+          streams because they do not share the same ComIDs or Permanent_Identifiers.
+
+          In all regions, in cases where streams were added manually and where no reach code or ComID was 
+          available, a value of -999 was entered for the ReachCode.
+        Source_Used_Citation_Abbreviation:  High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation:  Medium-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation:  NHDPlus V2 NHDFlowline 
+        Process_Date: 2013
+
+      Process_Step:
+        Process_Description:
+          Spatial and Attribute Corrections
+
+          The addition of new streams, removal of streams, modifications to stream location, name changes, 
+          changes to flow direction, and changes in stream network participation were made to selected 
+          streams based on feedback from users of National Atlas Streams 1:1M 2012 and the Streamer 
+          stream-tracing web application.  Imagery and topographic maps were used for guidance.
+        Source_Used_Citation_Abbreviation:  NHDPlus V2 NHDFlowline 
+        Source_Used_Citation_Abbreviation:  USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation:  ESRI Imagery World 2D
+        Source_Used_Citation_Abbreviation:  GNIS Map Service
+        Process_Date: 2013
+
+      Process_Step:
+        Process_Description:
+          Update of Strahler Stream Order Attribute
+
+          The Strahler stream order attribute was initially calculated in 2012 for the release of the 
+          Version 1 streams.  It was updated in 2014 for diversions, international border streams, and the 
+          Intracoastal Waterway.  In border areas, it was modified to reflect the stream order of streams 
+          entering the United States from Canada and Mexico. For smaller international stream networks the 
+          stream order was calculated. For larger international stream networks the editors made a rough 
+          estimate.  The stream order of diversions was reduced to 1.  Streams that are disabled were not 
+          included in the stream order calculation.  They have a Strahler value of -999 if they are inside 
+          the coastline.  The stream order of the portions of the Intracoastal Waterway that are outside 
+          the coastline was set to -998 in order to aid in symbolizing streams in cartographic 
+          products.
+        Source_Used_Citation_Abbreviation:  Atlas of Canada Rivers 1:1M
+        Source_Used_Citation_Abbreviation:  INEGI Corriente de Agua 1:1M
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of M-values
+
+          M-values were calculated for each reach using the NHD MValue Utility.  M-values range from 0 
+          to 100 and measure the distance of each vertex along a line.  In this map layer, m-values 
+          describe the distance, as a percentage, from the downstream end of the reach.  If a reach is 
+          composed of more than one stream segment, the range of 0 to 100 is not repeated on each segment 
+          but spread over the length of the entire group of segments that comprise the reach.  M-values are 
+          stored in the m-coordinate of each vertex and are used in linear referencing.
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Update of Stream_ID
+
+          The Stream_ID is the unique identifier for the feature in the 1:1M map layer.  The starting 
+          number is 10,000,001.  It was initially calculated in 2012 for the release of the Version 1 
+          streams.  New streams and streams that were split into multiple features were given new 
+          Stream_IDs.  All other streams retain their original Stream_ID.
+        Process_Date: 2014
+
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Vector
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: String
+        Point_and_Vector_Object_Count: 1095028 
+
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Geographic:
+        Latitude_Resolution: 0.000150
+        Longitude_Resolution: 0.000150
+        Geographic_Coordinate_Units: Decimal degrees
+      Geodetic_Model:
+        Horizontal_Datum_Name: North American Datum of 1983
+        Ellipsoid_Name: Geodetic Reference System 80
+        Semi-major_Axis: 6378137.000000
+        Denominator_of_Flattening_Ratio: 298.257222
+
+  Entity_and_Attribute_Information:
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: Linear water feature
+        Entity_Type_Definition: 
+          A linear water feature in the United States, Puerto Rico, or the U.S. Virgin Islands
+        Entity_Type_Definition_Source: National Atlas of the United States
+      Attribute: 
+        Attribute_Label: Shape 
+        Attribute_Definition: The representation of the entity in the data.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values: 
+          Enumerated_Domain: 
+            Enumerated_Domain_Value: Polyline ZM
+            Enumerated_Domain_Value_Definition: 
+              A polyline is a 1-dimensional element that may or may not surround a 2-dimensional element.  
+              A polyline ZM is a polyline feature that can store elevation (Z) values and distance 
+              measurement (M) values for each vertex.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States 
+      Attribute:
+        Attribute_Label: Stream_ID
+        Attribute_Definition: The unique identifier of the feature.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 10000001
+            Range_Domain_Maximum: 11095664
+      Attribute:
+        Attribute_Label: Name
+        Attribute_Definition: The proper name of the linear water feature.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values: 
+          Enumerated_Domain: 
+            Enumerated_Domain_Value: <blank> 
+            Enumerated_Domain_Value_Definition: The feature has no name or the name is unknown.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values: 
+          Unrepresentable_Domain: 
+            There is no predefined set of valid linear water feature names.  Most names come from the 
+            Geographic Names Information System (GNIS).
+      Attribute:
+        Attribute_Label: Feature
+        Attribute_Definition: The type of linear water feature.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Aqueduct
+            Enumerated_Domain_Value_Definition: 
+              A structure designed to transport domestic or industrial water from a supply source to a 
+              distribution point, often by gravity.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Artificial Path
+            Enumerated_Domain_Value_Definition: 
+              A connector that allows flow to be networked through water bodies.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Canal
+            Enumerated_Domain_Value_Definition: 
+              An artificial open waterway constructed to transport water, to irrigate or drain land, to 
+              connect two or more bodies of water, or to serve as a waterway for water craft.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Intracoastal Waterway
+            Enumerated_Domain_Value_Definition: 
+              A system of rivers, canals, and designated channels along the Atlantic and Gulf Coasts of the 
+              United States.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Stream
+            Enumerated_Domain_Value_Definition: A body of flowing water.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Stream Intermittent
+            Enumerated_Domain_Value_Definition: 
+              A body of flowing water that contains water for only part of the year.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: F_Code
+        Attribute_Definition: 
+          The numeric code indicating the type of water feature described by the feature label.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 4
+            Enumerated_Domain_Value_Definition: Stream
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 5
+            Enumerated_Domain_Value_Definition: Canal
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 6
+            Enumerated_Domain_Value_Definition: Aqueduct
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 8
+            Enumerated_Domain_Value_Definition: Intracoastal Waterway
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 14
+            Enumerated_Domain_Value_Definition: Stream Intermittent
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 23
+            Enumerated_Domain_Value_Definition: Artificial Path
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: State
+        Attribute_Definition: 
+          The 2-letter Federal Information Processing Series (FIPS) code for the State or State equivalent 
+          in which the water feature is located.  If the water feature falls in two States, both codes are 
+          listed, separated by a hyphen.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              American National Standards Institute (ANSI) Codes for States, the District of Columbia, 
+              Puerto Rico, and the Insular Areas of the United States
+            Codeset_Source: U.S. Census Bureau
+      Attribute:
+        Attribute_Label: State_FIPS
+        Attribute_Definition: 
+          The 2-digit FIPS code for the State in which the water feature is located. If the water feature 
+          falls in two States, both codes are listed, separated by a hyphen.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name:
+              American National Standards Institute (ANSI) Codes for States, the District of Columbia, 
+              Puerto Rico, and the Insular Areas of the United States
+            Codeset_Source: U.S. Census Bureau
+      Attribute:
+        Attribute_Label: Region
+        Attribute_Definition: 
+          The 2-digit Hydrologic Unit Code for major river basins.  Leading zeroes are not shown.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 21
+      Attribute:
+        Attribute_Label: ReachCode
+        Attribute_Definition: 
+          A unique identifier for the 'reach' of the stream.  The first eight digits are the Watershed 
+          Boundary Dataset 8-digit Hydrologic Unit Code, which identifies the subbasin in which the stream 
+          is located.  The next six digits are randomly assigned, sequential numbers that are 
+          unique within a subbasin, resulting in a 14-character value.  This attribute links features back 
+          to the National Hydrography Dataset, National Hydrography Dataset Plus, and other data sets that 
+          use reach codes.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: No reach code was available in the source data.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 01010001000166
+            Range_Domain_Maximum: 21010006000235 
+      Attribute:
+        Attribute_Label: ComID
+        Attribute_Definition: 
+          A value that uniquely identifies each feature in the Medium-Resolution NHD, NHDPlus Version 1, 
+          and NHDPlus Version 2 NHDFlowline data. The ComID also corresponds to the Permanent_Identifier in 
+          the High-Resolution NHD NHDFlowline data for Alaska, Puerto Rico, and the U.S. Virgin Islands 
+          (unless an NHDFlowline feature is updated and assigned a new value for its Permanent_Identifier).
+
+          This attribute links 1:1M features to feature classes and attribute tables in the NHD 
+          and NHDPlus datasets.  Because many features were split during the creation of the 1:1M 
+          data, there may be multiple features with the same value.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: 
+              There is no ComID because the stream did not come from the NHD or NHDPlus.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 859
+            Range_Domain_Maximum: 948070
+      Attribute:
+        Attribute_Label: From_node
+        Attribute_Definition: 
+          The unique from-node identifier. It represents the upstream end of a stream segment.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 1099607
+      Attribute:
+        Attribute_Label: To_node
+        Attribute_Definition: 
+          The unique to-node identifier.  It represents the downstream end of a stream segment.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 1099607
+      Attribute:
+        Attribute_Label: Enabled
+        Attribute_Definition: An indication of whether a feature can participate in a geometric network.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 0
+            Enumerated_Domain_Value_Definition: 
+              Not enabled.  In the geodatabase, this value is shown as False.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 1
+            Enumerated_Domain_Value_Definition: 
+              Enabled.  In the geodatabase, this value is shown as True.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: Strahler
+        Attribute_Definition: 
+          A number representing the order of the stream using the Strahler stream-order classification 
+          system, in which first-order streams have no tributaries, second-order streams begin at the 
+          confluence of two first order streams, third-order streams begin at the confluence of 
+          two second-order streams and so on.  If a lower-order stream flows into a higher-order stream, 
+          the stream order of the higher-order stream does not increase.
+        Attribute_Definition_Source: Dingman, S.L., 2002, Physical Hydrology, 2nd Ed.
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 7
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -998
+            Enumerated_Domain_Value_Definition: 
+              The feature is not part of the stream network and is outside the coastline.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: 
+              The feature is not part of the stream network and is inside the coastline.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: Length_mi
+        Attribute_Definition: 
+          The length of the stream segment in miles, calculated using the North America Albers Equal Area 
+          Conic projection.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0. 000002
+            Range_Domain_Maximum: 129. 964481
+      Attribute:
+        Attribute_Label: GM_f_code
+        Attribute_Definition: The Global Map FACC feature code.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: BH000
+            Enumerated_Domain_Value_Definition: 
+              A pipe or artificial channel designed to transport water from a remote source, usually by 
+              gravity.  A man-made or improved natural waterway used for transportation.  An open, inclined 
+              channel which carries water for use in such operations as mining or logging.  A pipeline or 
+              channel generally used by hydroelectric plants or water mills to transport water by gravity 
+              or under pressure.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: BH140
+            Enumerated_Domain_Value_Definition: A natural flowing watercourse (from origin to end point).
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+      Attribute:
+        Attribute_Label: GM_hyc
+        Attribute_Definition: The Global Map Hydrological category.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 6
+            Enumerated_Domain_Value_Definition: Non-perennial/Intermittent/Fluctuating
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 8
+            Enumerated_Domain_Value_Definition: Perennial/Permanent
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: The GM_hyc attribute is not applicable to the feature.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+      Attribute:
+        Attribute_Label: GM_lit
+        Attribute_Definition: The Global Map Line type.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 1
+            Enumerated_Domain_Value_Definition: Single line stream
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 2
+            Enumerated_Domain_Value_Definition: Network connector/Imaginary line
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: The GM_lit attribute is not applicable to the feature.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+      Attribute:
+        Attribute_Label: GM_nam
+        Attribute_Definition: The Global Map name, which is the proper name of the feature.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: UNK
+            Enumerated_Domain_Value_Definition: The name is unknown.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: the GM_nam attribute is not applicable to the feature.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: There is no predefined set of valid feature names.
+      Attribute:
+        Attribute_Label: GM_soc
+        Attribute_Definition: The Global Map Source country.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain: 
+            Enumerated_Domain_Value: USA
+            Enumerated_Domain_Value_Definition: United States of America
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+      Attribute:
+        Attribute_Label: GM_exs
+        Attribute_Definition: The Global Map Existence category.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 1
+            Enumerated_Domain_Value_Definition: Definite
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: The GM_exs attribute is not applicable to this feature.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+      Attribute:
+        Attribute_Label: GM_loc
+        Attribute_Definition: The Global Map Location category.
+        Attribute_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: 0
+            Enumerated_Domain_Value_Definition: Unknown
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: -999
+            Enumerated_Domain_Value_Definition: The GM_loc attribute is not applicable to this feature.
+            Enumerated_Domain_Value_Definition_Source: Global Map Specifications Version 2.1
+
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: Earth Explorer, U.S. Geological Survey
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 47914 252nd Street
+          City: Sioux Falls
+          State_or_Province: SD
+          Postal_Code: 57198-0001
+        Contact_Voice_Telephone: 605-594-6116
+        Contact_Voice_Telephone: 866-573-3222
+        Contact_Electronic_Mail_Address: custserv@usgs.gov
+    Distribution_Liability:
+      Although these data have been processed successfully on a computer system at the U.S. Geological 
+      Survey, no warranty expressed or implied is made by the U.S. Geological Survey regarding the utility 
+      of the data on any other system, nor shall the act of distribution constitute any such warranty.  
+      No responsibility is assumed by the U.S. Geological Survey in the use of these data.
+
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI Shapefile
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI File Geodatabase 10.0
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+
+      Fees: None.
+
+  Metadata_Reference_Information:
+    Metadata_Date: 20140319
+    Metadata_Contact: 
+      Contact_Information: 
+        Contact_Organization_Primary: 
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive 
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+    Metadata_Standard_Name: FGDC Content Standard for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998
+    Metadata_Security_Information: 
+      Metadata_Security_Classification_System: None 
+      Metadata_Security_Classification: Unclassified 
+      Metadata_Security_Handling_Description: None 
+

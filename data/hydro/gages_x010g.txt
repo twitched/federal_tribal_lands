@@ -1,0 +1,1137 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: National Atlas of the United States
+        Publication_Date: 201403
+        Title: Streamflow Gaging Stations of the United States
+        Geospatial_Data_Presentation_Form: Vector digital data
+        Publication_Information:
+          Publication_Place: Rolla, MO
+          Publisher: National Atlas of the United States
+        Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+    Description:
+      Abstract: 
+        This map layer shows selected streamflow gaging stations of the United States, Puerto Rico, and the 
+        U.S. Virgin Islands, in 2013.  Gaging stations, or gages, measure the height (stage) and volume of 
+        flow at a point location on a water feature.  Gages in this map layer were drawn from the National 
+        Hydrography Dataset Plus (NHDPlus) Version 1 Stream Gage Events, NHDPlus Version 2 National 
+        Data – Gage Locations, and from the National Water Information System (NWIS) Web Interface.  The 
+        gage positions were adjusted (snapped) using ArcGIS so that the gages were located directly on 
+        streams in the National Atlas map layer, 1:1,000,000-Scale Streams of the United States.  The gages 
+        and streams also share attributes that link them together.
+
+      Purpose: 
+        These data are intended for geographic display and analysis at the national level, and for large 
+        regional areas.  The data should be displayed and analyzed at scales appropriate 
+        for 1:1,000,000-scale data.  No responsibility is assumed by the National Atlas of the United 
+        States in the use of these data.
+
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Single_Date/Time:
+          Calendar_Date: 2013
+      Currentness_Reference: Ground condition
+    Status:
+      Progress: Complete
+      Maintenance_and_Update_Frequency: Irregular
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: -165.76
+        East_Bounding_Coordinate: -65.47
+        North_Bounding_Coordinate: 70.67
+        South_Bounding_Coordinate: 17.98
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+        Theme_Keyword: Inland Waters
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: Drainage
+        Theme_Keyword: Hydrography
+        Theme_Keyword: Hydrology
+        Theme_Keyword: Stream Gage
+        Theme_Keyword: Stream Gauge
+        Theme_Keyword: Streamflow
+        Theme_Keyword: Water
+      Place:
+        Place_Keyword_Thesaurus:
+          Organization for International Standards, 2008, ISO 3166 Country Codes,
+          https://www.iso.org/obp/ui/#search
+        Place_Keyword: United States
+        Place_Keyword: US
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: USA
+      Place:
+        Place_Keyword_Thesaurus: 
+          U.S. Department of Commerce; 2013; American National Standards Institute (ANSI) Codes for States, 
+          the District of Columbia, Puerto Rico, and the Insular Areas of the United States; 
+          Washington, DC; U.S. Census Bureau; http://www.census.gov/geo/reference/ansi_statetables.html.
+        Place_Keyword: Alabama
+        Place_Keyword: Alaska
+        Place_Keyword: Arizona
+        Place_Keyword: Arkansas
+        Place_Keyword: California
+        Place_Keyword: Colorado
+        Place_Keyword: Connecticut
+        Place_Keyword: Delaware
+        Place_Keyword: District of Columbia
+        Place_Keyword: Florida
+        Place_Keyword: Georgia
+        Place_Keyword: Hawaii
+        Place_Keyword: Idaho
+        Place_Keyword: Illinois
+        Place_Keyword: Indiana
+        Place_Keyword: Iowa
+        Place_Keyword: Kansas
+        Place_Keyword: Kentucky
+        Place_Keyword: Louisiana
+        Place_Keyword: Maine
+        Place_Keyword: Maryland
+        Place_Keyword: Massachusetts
+        Place_Keyword: Michigan
+        Place_Keyword: Minnesota
+        Place_Keyword: Mississippi
+        Place_Keyword: Missouri
+        Place_Keyword: Montana
+        Place_Keyword: Nebraska
+        Place_Keyword: Nevada
+        Place_Keyword: New Hampshire
+        Place_Keyword: New Jersey
+        Place_Keyword: New Mexico
+        Place_Keyword: New York
+        Place_Keyword: North Carolina
+        Place_Keyword: North Dakota
+        Place_Keyword: Ohio
+        Place_Keyword: Oklahoma
+        Place_Keyword: Oregon
+        Place_Keyword: Pennsylvania
+        Place_Keyword: Rhode Island
+        Place_Keyword: South Carolina
+        Place_Keyword: South Dakota
+        Place_Keyword: Tennessee
+        Place_Keyword: Texas
+        Place_Keyword: Utah
+        Place_Keyword: Vermont
+        Place_Keyword: Virginia
+        Place_Keyword: Washington
+        Place_Keyword: West Virginia
+        Place_Keyword: Wisconsin
+        Place_Keyword: Wyoming
+        Place_Keyword: Puerto Rico
+        Place_Keyword: Virgin Islands
+        Place_Keyword: U.S. Virgin Islands
+    Access_Constraints: None.
+    Use_Constraints: 
+      None.  Acknowledgment of the National Atlas of the United States of America would be appreciated in 
+      products derived from these data.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing and physical address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+          Country: USA
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+        Contact_Instructions: 
+          For questions about this map layer or metadata, please contact the National Atlas using the 
+          information above, or through the U.S. Geological Survey contact page at 
+          http://www.usgs.gov/ask/.  For distribution questions, please see the Distribution Information 
+          elsewhere in this metadata.
+    Native_Data_Set_Environment: 
+      Microsoft Windows 7 Enterprise Version 6.1.7601 (Build 7601); ESRI ArcGIS 10.0.5.4400
+
+  Data_Quality_Information:
+    Attribute_Accuracy:
+      Attribute_Accuracy_Report:
+        The Gage_ID and Site_NO attributes were checked for duplicates and null values.  All features have 
+        unique values.
+
+        The values for Site_TP_CD, Lat_NWIS, Long_NWIS, Lat_1M, and Long_1M were checked to ensure that 
+        there are no null values and that all values are in the correct domain.
+
+        Values in the ReachCode field were checked to ensure that there are no null values.  They were 
+        cross-checked with the Huc8 and Region values, and were checked against the ReachCode for the 
+        corresponding stream in the National Atlas Streams 1:1,000,000-scale (1:1M) map layer.
+
+        Values in the Stream_ID field were checked to ensure that there are no null values.  Stream_IDs 
+        were also compared to Stream_IDs in the National Atlas Streams 1:1M map layer to ensure that 
+        corresponding gages and streams have identical codes.
+
+        Values in the Region and Huc8 fields were checked to ensure that there are no null values and all 
+        values are in the correct domain.  Selections by attribute and location were used to ensure the 
+        region code matches the region the gage is in.
+
+        Values in the State and State_FIPS fields were checked to ensure that there are no null values and 
+        all values are in the correct domain.  
+
+        All remaining attribute fields were checked to ensure that there are no null values.
+    Logical_Consistency_Report:
+      Stream gage positions were checked against streams in the National Atlas Streams 1:1M 2014 map layer 
+      to ensure that each gage has a corresponding 1:1M stream and no gage is associated with more than one 
+      stream.
+ 
+      Stream_IDs and ReachCodes were compared to Stream_IDs and ReachCodes in the National Atlas Streams 
+      1:1M 2014 map layer to ensure that corresponding gages and streams have identical values.
+
+      Stream gages downloaded from NWIS Web were compared to aerial imagery and topographic maps to ensure 
+      they are located on the correct stream.
+
+      Attributes were checked for nulls and valid values.
+
+      Stream gages were checked to ensure that they are within national boundaries and coastlines.
+    Completeness_Report:
+      This map layer contains selected stream gages in the United States, Puerto Rico, and the U.S. Virgin 
+      Islands.  Sites were selected only if they were within the terrestrial and coastal boundaries of the 
+      U.S., they had a corresponding stream in the National Atlas Streams 1:1M map layer, they had one of 
+      the following site types:
+      > Canal
+      > Ditch
+      > Diversion
+      > Estuary
+      > Lake, Reservoir, Impoundment
+      > Spring
+      > Stream
+      > Tidal Stream
+      > Wetland
+      >
+      and they had daily values in the following list of parameters:
+      > 00060 - Streamflow, ft/s
+      > 00065 - Gage height, ft
+      > 00054 - Reservoir storage, acre-ft
+      > 00053 - Surface Area, acres
+      > 00055 - Stream velocity, ft/s
+      > 00059 - Streamflow rate, gal/min
+      > 00062 - Reservoir elevation, ft
+      > 50042 - Discharge, gallons per minute
+      > 50051 - Flow rate, instantaneous, million gallons per day
+      > 72022 - Reservoir contents, M/gal
+      > 99020 - Elevation above NGVD 1929, ft
+      > 99060 - Streamflow, m/s
+      > 99065 - Gage height, m
+    Positional_Accuracy:
+      Horizontal_Positional_Accuracy:
+        Horizontal_Positional_Accuracy_Report: 
+          Most gages had their location reviewed during the creation of the NHDPlus version 1 and version 2 
+          source data and therefore reflect the accuracy of those sources.  Gages from NWIS Web had their 
+          location reviewed during the creation of this data set.  Gages were located on (snapped to) 
+          streams in the National Atlas Streams 1:1M 2014 map layer.  The streams had been generalized, and 
+          in some cases moved as much as 300 meters from nearby transportation features, so gages were 
+          relocated along with their corresponding stream. 
+
+    Lineage:
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA)
+            Originator: U.S. Geological Survey
+            Publication_Date: 2006
+            Title: National Hydrography Dataset Plus Stream Gage Event
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              To locate the stream gage data at the listed URL, select a data region.  The stream gage data 
+              are included in the Stream Gage Event zip files.
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/NHDPlusV1_data.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2004
+          Source_Currentness_Reference: Ground condition
+        Source_Citation_Abbreviation: NHDPlus V1 Gages
+        Source_Contribution: 
+          Spatial and attribute information.  Served as source data from which the 1:1,000,000-scale map 
+          layer was created.   
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201208
+            Title: 1:1,000,000-Scale Streams of the United States
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201208
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Streams 1:1M
+        Source_Contribution: 
+          Spatial and attribute information.  Gages were snapped to the 1:1,000,000-Scale Streams of the 
+          United States.  Streams were also used as a guide to determine location and attributes of stream 
+          gages obtained from NWIS Web.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Environmental Systems Research Institute - ESRI
+            Publication_Date: 2009
+            Title: ESRI USA Topo Maps Map Service
+            Geospatial_Data_Presentation_Form: Raster digital data
+            Online_Linkage: 
+              http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2009
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Contribution: 
+          Spatial and attribute information.  Used to identify location and attributes of stream gages.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: 2010
+            Title: National Water Information System Web Interface
+            Geospatial_Data_Presentation_Form: Tabular digital data
+            Online_Linkage: http://waterdata.usgs.gov/nwis
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2010
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NWIS Web
+        Source_Contribution: 
+          Spatial and attribute information.  Served as source data from which the 1:1,000,000-scale map 
+          layer was created.   
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA)
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2006
+            Title: National Hydrography Dataset Plus NHDFlowline
+            Edition: 1
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              To locate the flowline data at the listed URL, select a data region.  The Flowline data are 
+              included in the NHD zip files.
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/NHDPlusV1_data.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2006
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V1 NHDFlowline
+        Source_Contribution: 
+          Spatial and attribute information.  Used as a guide to determine location and attributes of 
+          stream gages obtained from NWIS Web.  Used for all areas except Alaska.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey
+            Publication_Date: 1999
+            Title: High-Resolution National Hydrography Dataset NHDFlowline
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Publication_Information:
+              Publication_Place: Reston, VA
+              Publisher: U.S. Geological Survey
+            Online_Linkage: ftp://nhdftp.usgs.gov/DataSets/Staged/SubRegions/FileGDB/
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 1999
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Contribution: 
+          Spatial and attribute information.  Used as a guide to determine location and attributes of 
+          stream gages obtained from NWIS Web.  Used only for Alaska.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: Environmental Systems Research Institute - ESRI
+            Publication_Date: 2009
+            Title: ESRI Imagery World 2D Map Service
+            Geospatial_Data_Presentation_Form: Raster digital data
+            Online_Linkage: 
+              http://www.esri.com/software/arcgis/arcgisonline/maps/maps-and-map-layers
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2009
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: ESRI Imagery World 2D
+        Source_Contribution: 
+          Spatial and attribute information.  Used to identify location and attributes of stream gages.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale Streams of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Source_Contribution: 
+          Spatial and attribute information.  Gages were snapped to the streams.
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA) 
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2013
+            Title: National Hydrography Dataset Plus Version 2 National Data - Gage Locations
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/V2NationalData.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2013
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V2 Gage Locations
+        Source_Contribution: 
+          Spatial and attribute information.  Served as source data from which the 1:1,000,000-scale map 
+          layer was created.   
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA) 
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2013
+            Title: National Hydrography Dataset Plus Version 2 National Data - Gage Info
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Tabular data
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/V2NationalData.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2013
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V2 Gage Info
+        Source_Contribution: Attribute information.  
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: Unpublished material
+            Title: National Hydrography Dataset Plus Version 2 Gages
+            Geospatial_Data_Presentation_Form: Vector digital data
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Internal file
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2014
+          Source_Currentness_Reference: Compilation date
+        Source_Citation_Abbreviation: NHDPlus V2 Gages
+        Source_Contribution: Spatial and attribute information.
+ 
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: U.S. Environmental Protection Agency (USEPA) 
+            Originator: U.S. Geological Survey (USGS)
+            Publication_Date: 2012
+            Title: National Hydrography Dataset Plus Version 2 NHDFlowline
+            Edition: Version 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Other_Citation_Details: 
+              To locate the flowline data at the listed URL, select a data region.  The Flowline data are 
+              included in the NHDSnapshot zip files.
+            Online_Linkage: http://www.horizon-systems.com/NHDPlus/NHDPlusV2_data.php
+        Source_Scale_Denominator: 100000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 2012
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: NHDPlus V2 NHDFlowline 
+        Source_Contribution: Spatial and attribute information.  
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201403
+            Title: 1:1,000,000-Scale State Boundaries of the United States
+            Edition: 2
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201403
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas States 1:1M 2014
+        Source_Contribution: 
+          Spatial and attribute information.  Used to determine the State code and State_FIPS code for 
+          gages.  Also used to determine if gages were within coastlines and national boundaries.
+      
+      Process_Step:
+        Process_Description:
+          Selection of Gages from NHDPlus V1 Stream Gages
+
+          Gages were obtained from the NHDPlus V1 Gages.  If the gage's reach code matched a reach code in 
+          the National Atlas Streams 1:1M map layer then the gage was included and snapped to the nearest 
+          point on the nearest stream.  The reach code of the gage was compared to the reach code of the 
+          stream the gage snapped to.  If the codes were not identical then the station name for the gage 
+          was compared to topographic map stream names to determine if the gage should be moved to a 
+          different stream with a matching reach code or if the reach code for the gage should be 
+          corrected.
+        Source_Used_Citation_Abbreviation: NHDPlus V1 Gages
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Process_Date: 2009
+
+      Process_Step:
+        Process_Description:
+          Selection of Gages from the National Water Information System Web Interface
+
+          The NHDPlus V1 Gages were from 2004.  Additional gages were obtained from NWIS Web to supplement 
+          the NHDPlus V1 Gages.  Gages were downloaded in February 2010, and gages with daily data in the 
+          following categories were selected:
+          > 
+          > Parameter code = 00060 - Streamflow, ft3/s
+          > Parameter code = 00065 - Gage height, ft
+          > Parameter code = 00054 - Reservoir storage, acre-ft
+          > Parameter code = 00053 - Surface Area, acres
+          > Parameter code = 00055 - Stream velocity, ft/s
+          > Parameter code = 00059 - Streamflow rate, gal/min
+          > Parameter code = 00062 - Reservoir elevation, ft
+          > Parameter code = 50042 - Discharge, gallons per minute
+          > Parameter code = 50051 - Flow rate, instantaneous, million gallons 
+          >                            per day
+          > Parameter code = 72022 - Reservoir contents, M gal
+          > Parameter code = 99020 - Elevation above NGVD 1929, ft
+          > Parameter code = 99060 - Streamflow, m3/s
+          > Parameter code = 99065 - Gage height, m
+        Source_Used_Citation_Abbreviation: NWIS Web
+        Process_Date: 2010
+
+      Process_Step:
+        Process_Description:
+          Selection of Additional Gages and Streams
+
+          Gages from the NWIS Web download were snapped to streams in the National Atlas Streams 1:1M.  If 
+          the gage couldn't be snapped to a 1:1M stream, it was snapped to the NHDPlus V1 NHDFlowlines, or 
+          in Alaska, to the High-Resolution NHDFlowlines.  Any gages that could not be snapped to one of 
+          these three sources were deleted.  To determine if gages were snapped to the correct stream, the 
+          station name was compared to stream names from National Atlas Streams 1:1M, NHDPlus V1 
+          NHDFlowline, High-Resolution NHDFlowline, topographic maps, and aerial imagery.
+
+          The 1:1M gages and streams were edited simultaneously.  Gages were used to determine if 
+          additional streams should be added to the streams map layer, and streams were used to determine 
+          if gages should be added in the gages map layer.  Gages were reviewed visually, using topographic 
+          maps, aerial imagery, NHDPlus V1 NHDFlowlines, High-Resolution NHDFlowline, and National Atlas 
+          Streams 1:1M.  Gages were not added to the map layer if adding their corresponding stream was 
+          inconsistent with the density of streams in the area, if other gages on similar streams were 
+          nearby, if the stream order was lower than other streams in the area, or if the gage was on a 
+          canal.  At the same time, the stream was added to the National Atlas Streams 1:1M map layer.
+        Source_Used_Citation_Abbreviation: NHDPlus V1 NHDFlowline
+        Source_Used_Citation_Abbreviation: High-Resolution NHDFlowline
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M
+        Source_Used_Citation_Abbreviation: NWIS Web
+        Source_Used_Citation_Abbreviation: NHDPlus V1 Gages
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Process_Date: 2011
+
+      Process_Step:
+        Process_Description:
+          Integration of Gages with Version 2 of the 1:1M Streams
+
+          National Atlas Streams 1:1M 2014 (version 2 of the streams map layer) contains minor adjustments 
+          along the U.S.-Canada border and in other places where the data were improved or corrected.  
+          Gages were checked to verify that they were snapped to the correct stream and were moved if 
+          necessary.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Combination of NHDPlus V2 Gage Locations and Gage Info
+
+          The NHDPlus V2 Gage Locations and Gage Info files were downloaded from the NHDPlus website.  The 
+          Gage Info table was joined to the Gage Locations table and the combined data were exported to a 
+          new feature class.
+        Source_Used_Citation_Abbreviation: NHDPlus V2 Gage Locations
+        Source_Used_Citation_Abbreviation: NHDPlus V2 Gage Info
+        Process_Date: 2014
+        Source_Produced_Citation_Abbreviation: NHDPlus V2 Gages
+
+      Process_Step:
+        Process_Description:
+          Selection of Gages from NHDPlus V2 Gages
+
+          NHDPlus V2 Gages were checked to see if they had matching reach codes in National Atlas 
+          Streams 1:1M 2014.  If they had a matching reach code and they were not already in the gages map 
+          layer, they were snapped to the stream and added.  NHDPlus V2 Gages that did not have a matching 
+          reach code in the streams were reviewed if their drainage area was greater than 100 square miles. 
+          The station name for the gage was checked against topographic maps, imagery, and stream names to 
+          determine if the gage should be moved to a different stream, have its reach code changed, and be 
+          added to the gages map layer.
+        Source_Used_Citation_Abbreviation: NHDPlus V2 Gages
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Source_Used_Citation_Abbreviation: NHDPlus V2 NHDFlowline
+        Source_Used_Citation_Abbreviation: USA Topo Maps Map Service
+        Source_Used_Citation_Abbreviation: ESRI Imagery World 2D
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Reach Code
+
+          National Atlas Streams 1:1M 2014 has reach codes that were updated to match the reach codes in 
+          NHDPlus V2 NHDFlowlines in the 48 conterminous States; High-Resolution NHDFlowlines in Alaska, 
+          Puerto Rico, and the U.S. Virgin Islands; and Medium-Resolution NHDFlowlines in Hawaii.  All 1:1M 
+          gages were checked and, if necessary, their reach codes were updated to match their corresponding 
+          stream in National Atlas Streams 1:1M 2014.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Measure
+
+          Gages were intersected with National Atlas Streams 1:1M 2014 and each gage was assigned a measure 
+          that corresponds to its location on a reach.  Measures range from 0 to 100 and record the 
+          distance, as a percentage, from the downstream end of a reach.  If a reach is composed of more 
+          than one stream segment, the measure is based on the length of the entire group of segments that 
+          comprise the reach.  Measures are used in linear referencing.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of the Gage_ID
+
+          The Gage_ID is the unique identifier for gages in the 1:1M map layer.  The starting number 
+          is 100,001.
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of State Abbreviation and FIPS codes
+  
+          The gages were intersected with the National Atlas States 1:1M 2014 map layer to transfer the 
+          State abbreviations and Federal Information Processing Series (FIPS) codes.  The intersected 
+          layer was analyzed to determine which gages fell in multiple States.  For gages on State 
+          boundaries, the State abbreviations and FIPS codes were concatenated with a hyphen to include 
+          information from multiple States.  Gages outside the boundaries of the States layer were removed.
+        Source_Used_Citation_Abbreviation: National Atlas States 1:1M 2014
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Region and HUC8
+
+          The two-digit region code (Hydrologic Unit Code or HUC) was calculated from the first two digits 
+          of the reach code.  The eight-digit sub-basin code (Hydrologic Unit Code or HUC) was calculated 
+          from the first eight digits of the reach code.
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Agency_CD, Site_NO, Station_NM, Site_TP_CD, Lat_NWIS, Long_NWIS
+
+          Attributes values for Agency_CD, Site_NO, Station_NM, Site_TP_CD, Lat_NWIS, Long_NWIS were 
+          determined from the agency_cd, site_no, station_nm, site_tp_cd, dec_lat_va, and dec_long_va 
+          values in NWIS Web.
+        Source_Used_Citation_Abbreviation: NWIS Web
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Stream_ID
+
+          The Stream_ID is the unique identifier of the stream that the gage is snapped to.  The value 
+          comes from the National Atlas Streams 1:1M 2014 map layer and links the two map layers together. 
+          There may be more than one gage sharing the same Stream_ID.  No gage has more than one Stream_ID.
+        Source_Used_Citation_Abbreviation: National Atlas Streams 1:1M 2014
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Source
+
+          The value for the Source attribute was determined from the data set from which the gage was 
+          obtained.
+        Source_Used_Citation_Abbreviation: NHDPlus V1 Gages
+        Source_Used_Citation_Abbreviation: NHDPlus V2 Gages
+        Source_Used_Citation_Abbreviation: NWIS Web
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Review
+
+          The Review attribute provides information about when the gage location was reviewed, or about 
+          what entity reviewed the location of the gage during data compilation.  It was calculated 
+          primarily from the Reviewed attribute in the NHDPlus version 1 and version 2 source data sets.  
+        Source_Used_Citation_Abbreviation: NHDPlus V1 Gages
+        Source_Used_Citation_Abbreviation: NHDPlus V2 Gages
+        Process_Date: 2014
+
+      Process_Step:
+        Process_Description:
+          Calculation of Lat_1M and Long_1M
+
+          Latitude and longitude coordinates were calculated for the location of the gage using ArcGIS.  
+          These coordinates may be different from the coordinates in NWIS because the streams the gages are 
+          on have been generalized and moved for cartographic reasons.
+        Process_Date: 2014
+      Process_Step:
+        Process_Description:
+          Calculation of NWISWeb
+
+          The URL for the gage's NWIS web page was calculated by concatenating the gage's site number and a 
+          generic NWISWeb URL.
+        Source_Used_Citation_Abbreviation: NWIS Web
+        Process_Date: 2014
+
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Point
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: Point
+        Point_and_Vector_Object_Count: 20032
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Geographic:
+        Latitude_Resolution: 0.000150
+        Longitude_Resolution: 0.000150
+        Geographic_Coordinate_Units: Decimal degrees
+      Geodetic_Model:
+        Horizontal_Datum_Name: North American Datum of 1983
+        Ellipsoid_Name: Geodetic Reference System 80
+        Semi-major_Axis: 6378137.000000
+        Denominator_of_Flattening_Ratio: 298.257222
+
+  Entity_and_Attribute_Information:
+    Detailed_Description:
+      Entity_Type:
+        Entity_Type_Label: Streamflow Gaging Station
+        Entity_Type_Definition: 
+          A gage used to measure the height (stage) and volume of flow at a point location on a water 
+          feature.
+        Entity_Type_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: Shape
+        Attribute_Definition: The representation of the entity in the data.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: Point M
+            Enumerated_Domain_Value_Definition: 
+              A point is a 0-dimensional element.  A point M is a point feature that can store a distance 
+              measurement (M) value along an associated line feature.
+            Enumerated_Domain_Value_Definition_Source: ESRI 
+      Attribute:
+        Attribute_Label: Gage_ID
+        Attribute_Definition: A unique identifier for the feature.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 100001
+            Range_Domain_Maximum: 120032
+      Attribute:
+        Attribute_Label: Agency_CD
+        Attribute_Definition: 
+          A code identifying the agency which reports data collected at the gage.  Agency codes are fixed 
+          values assigned by the National Water Information System (NWIS).
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: USGS
+            Enumerated_Domain_Value_Definition: U.S. Geological Survey
+            Enumerated_Domain_Value_Definition_Source: National Water Information System
+      Attribute:
+        Attribute_Label: Site_NO
+        Attribute_Definition: 
+          The site number.  Each site in the USGS data base has a unique 8- to 15-digit identification 
+          number.  Site numbers are assigned by the USGS.  The first two digits of the site number indicate 
+          the major drainage basin in which the site is located; the additional digits identify the site 
+          location within the stream network, and generally indicate the downstream order of the sites.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: There is no predefined set of valid site numbers.
+      Attribute:
+        Attribute_Label: Station_NM
+        Attribute_Definition: 
+          The name associated with the streamflow gaging station.  The name is usually a brief phrase 
+          describing the location of the gage, including the name of the water feature the gage is on and 
+          landmarks nearby.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: There is no predefined set of valid station names.
+      Attribute:
+        Attribute_Label: Site_TP_CD
+        Attribute_Definition: 
+          The Site Type Code of the gage, which describes the hydrologic setting of the site.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ES
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on an estuary.  An estuary is a partially enclosed coastal waterbody 
+              where tidal movement and stream flow mix fresh and salt water.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: FA-DV
+            Enumerated_Domain_Value_Definition: 
+              The gage is located at a facility where water is withdrawn or diverted from a stream or 
+              waterbody.  Streamflow measurements at facility locations are expected to be strongly 
+              influenced by current or previous human activity; diversion sites include points such as the 
+              upstream end of a canal where it intersects a stream, the point where water is withdrawn from 
+              a reservoir, and the point where water is pumped from a water body for use elsewhere.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: LK
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on a lake, reservoir, or other impoundment.  Lakes, reservoirs, and other 
+              impoundments are standing bodies of water, deeper than wetlands, including expanded portions 
+              of rivers, and may be natural or man-made.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: SP
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on a spring.  A spring is a place where there is a natural flow of 
+              groundwater to the surface.  Springs may be perennial, intermittent, or ephemeral.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ST
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on a stream.  A stream is a body of flowing water which follows a defined 
+              channel.  The channel may be natural or may be partially artificial.  
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ST-CA
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on a canal.   A canal is an artificial open waterway constructed to 
+              transport water, to irrigate or drain land, to connect two or more bodies of water, or to 
+              serve as a waterway for water craft; it is larger than a ditch.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ST-DCH
+            Enumerated_Domain_Value_Definition: 
+              The gage is located on a ditch.   A ditch is an artificial waterway dug in the ground, 
+              constructed to transport water for drainage or irrigation.  It may be lined or unlined, and 
+              is smaller than a canal.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: ST-TS
+            Enumerated_Domain_Value_Definition: 
+              The gage is on a tidal stream.  The flow of a tidal stream is influenced by the tide, but the 
+              water chemistry is not normally affected. 
+            Enumerated_Domain_Value_Definition_Source: 
+              National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: WE
+            Enumerated_Domain_Value_Definition: 
+              The gage is located in a wetland.  A wetland is a non-cultivated, vegetated area that is 
+              inundated or saturated for a significant part of the year.  Wetlands may be natural or 
+              artificially created; they include swamps, marshes, bogs, and similar areas, and may be 
+              forested or unforested.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: ReachCode
+        Attribute_Definition: 
+          A 14-digit, unique identifier for the reach where the gage is located.  A reach is a continuous 
+          piece of surface water with similar hydrologic characteristics.  A reach may be composed of a 
+          single feature, such as a lake or isolated stream, but reaches may also be composed of a number 
+          of contiguous features.  The first eight digits of the code are the Watershed Boundary Dataset 
+          Hydrologic Unit Code (HUC), which identifies the subbasin in which the water feature is located.  
+          The next six digits are a randomly assigned, sequential number that is unique within the 
+          subbasin.  Once assigned, a reach code is permanently associated with its reach.  
+
+          The ReachCode links gages and other features to the 1:1,000,000-Scale Streams of the United 
+          States, National Hydrography Dataset, National Hydrography Dataset Plus Version 1, National 
+          Hydrography Dataset Plus Version 2, and other data sets that use reach codes.  No gage is 
+          associated with more than one reach, however, there may be multiple gages on one reach.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 01010002000001
+            Range_Domain_Maximum: 21010006000086
+      Attribute:
+        Attribute_Label: Stream_ID
+        Attribute_Definition: 
+          The unique identifier of the stream segment where the gage is located.  The Stream_ID is taken 
+          from  the National Atlas Streams 1:1M map layer.  No gage is associated with more than one 
+          Stream_ID, however, there may be multiple gages with the same Stream_ID.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 10000002
+            Range_Domain_Maximum: 11095585
+      Attribute:
+        Attribute_Label: State
+        Attribute_Definition: 
+          The 2-letter Federal Information Processing Series (FIPS) code for the State or State 
+          equivalent in which the gage is located.  If the gage falls in two States, both codes are listed, 
+          separated by a dash.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: 
+              American National Standards Institute (ANSI) Codes for States, the District of Columbia, 
+              Puerto Rico, and the Insular Areas of the United States
+            Codeset_Source: U.S. Department of Commerce
+      Attribute:
+        Attribute_Label: State_FIPS
+        Attribute_Definition: 
+          The 2-digit FIPS code for the State or State equivalent in which the gage is located.  If the 
+          gage falls in two States, both codes are listed, separated by a dash.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Codeset_Domain:
+            Codeset_Name: 
+              American National Standards Institute (ANSI) Codes for States, the District of Columbia, 
+              Puerto Rico, and the Insular Areas of the United States
+            Codeset_Source: U.S. Department of Commerce
+      Attribute:
+        Attribute_Label: Region
+        Attribute_Definition: 
+          The 2-digit Hydrologic Unit Code identifying the major river basin where the gage is located.  
+          Leading zeroes are not shown.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 21
+      Attribute:
+        Attribute_Label: HUC8
+        Attribute_Definition: 
+          The 8-digit Hydrologic Unit Code identifying the subbasin where the gage is located.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 01010002
+            Range_Domain_Maximum: 21010006
+      Attribute:
+        Attribute_Label: Lat_NWIS
+        Attribute_Definition: 
+          The latitude of the gage as listed in the National Water Information System (NWIS).
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 17.981721
+            Range_Domain_Maximum: 70.669884
+      Attribute:
+        Attribute_Label: Long_NWIS
+        Attribute_Definition: The longitude of the gage as listed in NWIS.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -165.755743
+            Range_Domain_Maximum: -65.480437
+      Attribute:
+        Attribute_Label: Lat_1M
+        Attribute_Definition: 
+          The latitude of the gage in this 1:1M National Atlas data.  The value may be 
+          different from the NWIS latitude for one or more of the following reasons: the latitude was 
+          calculated using ArcGIS; the gage was moved in order to snap it to a stream in the National Atlas 
+          Streams 1:1M 2014 map layer; the stream the gage is associated with was generalized and moved for 
+          cartographic reasons; or the gage was moved to a new location based on the station name and a 
+          review of topographic maps and imagery.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 17.986617
+            Range_Domain_Maximum: 70.668322
+      Attribute:
+        Attribute_Label: Long_1M
+        Attribute_Definition: 
+          The longitude of the gage in this 1:1M National Atlas data.  The value may be 
+          different from the NWIS longitude for one or more of the following reasons: the longitude was 
+          calculated using ArcGIS; the gage was moved in order to snap it to a stream in the National Atlas 
+          Streams 1:1M 2014 map layer; the stream the gage is associated with was generalized and moved for 
+          cartographic reasons; or the gage was moved to a new location based on the station name and a 
+          review of topographic maps and imagery.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: -165.755602
+            Range_Domain_Maximum: -65.479939
+      Attribute:
+        Attribute_Label: Source
+        Attribute_Definition: The source from which the gage information was obtained.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: NHDPlusV1
+            Enumerated_Domain_Value_Definition: The gage was obtained from NHDPlus V1 Gages.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: NHDPlusV2
+            Enumerated_Domain_Value_Definition: The gage was obtained from NHDPlus V2 Gages.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: NWISWeb
+            Enumerated_Domain_Value_Definition: The gage was retrieved from NWISWeb.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: Review
+        Attribute_Definition: 
+          The entity that determined the stream reach on which the gage is located.  The reach and any 
+          gages associated with the reach may have been moved for cartographic purposes after the review.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: NHDPlusV1
+            Enumerated_Domain_Value_Definition: 
+              The gage location was reviewed during the creation of the NHDPlus V1 Gages.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: NHDPlusV2
+            Enumerated_Domain_Value_Definition: 
+              The gage location was reviewed during the creation of the NHDPlus V2 Gages.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: None
+            Enumerated_Domain_Value_Definition: 
+              The gage came from either the NHDPlus Version 1 or version 2 sources but the location was not 
+              reviewed during the creation of either of those data sets, nor during the creation of this 
+              data set. 
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Enumerated_Domain:
+            Enumerated_Domain_Value: TXWSC
+            Enumerated_Domain_Value_Definition: 
+              The gage location was reviewed by geographers at the Texas Water Science Center.  This is 
+              used for gages retrieved from NWIS Web.  It was also used for gages from one of the two 
+              NHDPlus source data sets if the gage was moved to a new reach.
+            Enumerated_Domain_Value_Definition_Source: National Atlas of the United States
+      Attribute:
+        Attribute_Label: Measure
+        Attribute_Definition: 
+          The measure represents a gage’s location on a reach in the National Atlas Streams 1:1M 2014.  
+          Measures range from 0 to 100 and record the distance, as a percentage, from the downstream end of 
+          a reach.  If a reach is composed of more than one stream segment, the measure is based on the 
+          length of the entire group of segments that comprise the reach.  Measures are used in linear 
+          referencing.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0
+            Range_Domain_Maximum: 100
+      Attribute:
+        Attribute_Label: NWISWeb
+        Attribute_Definition: 
+          The URL for the gage's page in NWIS Web.  Detailed streamflow and other information for each gage 
+          is provided in NWIS Web.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Unrepresentable_Domain: There is no predefined set of valid NWIS Web addresses.
+
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: Earth Explorer, U.S. Geological Survey
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 47914 252nd Street
+          City: Sioux Falls
+          State_or_Province: SD
+          Postal_Code: 57198-0001
+          Country: USA
+        Contact_Voice_Telephone: 605-594-6116
+        Contact_Voice_Telephone: 866-573-3222
+        Contact_Electronic_Mail_Address: custserv@usgs.gov
+    Resource_Description: Downloadable Data
+    Distribution_Liability: 
+      Although these data have been processed successfully on a computer system at the U.S. Geological 
+      Survey, no warranty expressed or implied is made by the U.S. Geological Survey regarding the utility 
+      of the data on any other system, nor shall the act of distribution constitute any such warranty. No 
+      responsibility is assumed by the U.S. Geological Survey in the use of these data.
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI Shapefile
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI File Geodatabase 10.0
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+
+      Fees: None.
+
+  Metadata_Reference_Information:
+    Metadata_Date: 20140320
+    Metadata_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+          Country: USA
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+    Metadata_Standard_Name: FGDC Content Standard for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998
+    Metadata_Security_Information:
+      Metadata_Security_Classification_System: None
+      Metadata_Security_Classification: Unclassified
+      Metadata_Security_Handling_Description: None

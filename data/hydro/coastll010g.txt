@@ -1,0 +1,408 @@
+Metadata:
+  Identification_Information:
+    Citation:
+      Citation_Information:
+        Originator: National Atlas of the United States
+        Publication_Date: 201403
+        Title: 1:1,000,000-Scale Coastline of the United States 
+        Publication_Information:
+          Publication_Place: Rolla, MO
+          Publisher: National Atlas of the United States
+        Online_Linkage: http://nationalatlas.gov/atlasftp-1m.html
+    Description:
+      Abstract:
+        This map layer portrays the coastline of the United States, Puerto Rico, and the U.S. Virgin 
+        Islands.  The United States shoreline of the Great Lakes is also included.  This is a revised 
+        version of the July 2012 map layer.
+      Purpose:
+        These data are intended for geographic display and analysis at the national level, and for large 
+        regional areas.  The data should be displayed and analyzed at scales appropriate 
+        for 1:1,000,000-scale data.  No responsibility is assumed by the National Atlas of the United 
+        States in the use of these data.
+    Time_Period_of_Content:
+      Time_Period_Information:
+        Single_Date/Time:
+          Calendar_Date: 201403
+      Currentness_Reference: Publication date
+    Status:
+      Progress: Complete
+      Maintenance_and_Update_Frequency: Irregular
+    Spatial_Domain:
+      Bounding_Coordinates:
+        West_Bounding_Coordinate: 170
+        East_Bounding_Coordinate: -64
+        North_Bounding_Coordinate: 72
+        South_Bounding_Coordinate: 17
+    Keywords:
+      Theme:
+        Theme_Keyword_Thesaurus: ISO 19115 Topic Category
+        Theme_Keyword: Inland Waters
+        Theme_Keyword: Oceans
+      Theme:
+        Theme_Keyword_Thesaurus: None
+        Theme_Keyword: Coastline 
+        Theme_Keyword: Shoreline
+        Theme_Keyword: Oceans
+        Theme_Keyword: Great Lakes
+
+      Place:
+        Place_Keyword_Thesaurus:
+          Organization for International Standards, 2008, ISO 3166 Country Codes,
+          https://www.iso.org/obp/ui/#search
+        Place_Keyword: United States
+        Place_Keyword: US
+      Place:
+        Place_Keyword_Thesaurus: None
+        Place_Keyword: USA
+      Place:
+        Place_Keyword_Thesaurus:
+          U.S. Department of Commerce; 2013; American National Standards Institute (ANSI) Codes for States, 
+          the District of Columbia, Puerto Rico, and the Insular Areas of the United States; 
+          Washington, DC; U.S. Census Bureau; http://www.census.gov/geo/reference/ansi_statetables.html.
+        Place_Keyword: Alabama
+        Place_Keyword: Alaska
+        Place_Keyword: Arizona
+        Place_Keyword: Arkansas
+        Place_Keyword: California
+        Place_Keyword: Colorado
+        Place_Keyword: Connecticut
+        Place_Keyword: Delaware
+        Place_Keyword: District of Columbia
+        Place_Keyword: Florida
+        Place_Keyword: Georgia
+        Place_Keyword: Hawaii
+        Place_Keyword: Idaho
+        Place_Keyword: Illinois
+        Place_Keyword: Indiana
+        Place_Keyword: Iowa
+        Place_Keyword: Kansas
+        Place_Keyword: Kentucky
+        Place_Keyword: Louisiana
+        Place_Keyword: Maine
+        Place_Keyword: Maryland
+        Place_Keyword: Massachusetts
+        Place_Keyword: Michigan
+        Place_Keyword: Minnesota
+        Place_Keyword: Mississippi
+        Place_Keyword: Missouri
+        Place_Keyword: Montana
+        Place_Keyword: Nebraska
+        Place_Keyword: Nevada
+        Place_Keyword: New Hampshire
+        Place_Keyword: New Jersey
+        Place_Keyword: New Mexico
+        Place_Keyword: New York
+        Place_Keyword: North Carolina
+        Place_Keyword: North Dakota
+        Place_Keyword: Ohio
+        Place_Keyword: Oklahoma
+        Place_Keyword: Oregon
+        Place_Keyword: Pennsylvania
+        Place_Keyword: Rhode Island
+        Place_Keyword: South Carolina
+        Place_Keyword: South Dakota
+        Place_Keyword: Tennessee
+        Place_Keyword: Texas
+        Place_Keyword: Utah
+        Place_Keyword: Vermont
+        Place_Keyword: Virginia
+        Place_Keyword: Washington
+        Place_Keyword: West Virginia
+        Place_Keyword: Wisconsin
+        Place_Keyword: Wyoming
+        Place_Keyword: Puerto Rico
+        Place_Keyword: Virgin Islands
+        Place_Keyword: U.S. Virgin Islands
+    Access_Constraints: None
+    Use_Constraints:
+      None.  Acknowledgment of the National Atlas of the United States of America would be appreciated in 
+      products derived from these data.
+    Point_of_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive 
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+        Contact_Instructions:
+          For questions about this map layer or metadata, please contact the National Atlas using the 
+          information above, or through the U.S. Geological Survey contact page at 
+          http://www.usgs.gov/ask/.  For distribution questions, please see the Distribution Information 
+          elsewhere in this metadata. 
+    Native_Data_Set_Environment: 
+      Microsoft Windows 7 Enterprise Version 6.1.7601 (Build 7601); ESRI ArcGIS 10.0.5.4400
+
+  Data_Quality_Information:
+    Logical_Consistency_Report:
+      The map layer was checked for topological consistency using ArcGIS.  No other checks for logical 
+      consistency were performed on this map layer.
+    Completeness_Report:
+      This map layer includes the coastline of the United States, Puerto Rico, and the U.S. Virgin Islands.  
+      The United States shoreline of the Great Lakes is also included.
+    Lineage:
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale National Boundaries of the United States
+            Edition: 1
+            Publication_Information:
+              Publication_Place: Rolla, MO
+              Publisher: National Atlas of the United States
+        Type_of_Source_Media: online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: 1MBound
+        Source_Contribution: Spatial and attribute information
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: Unknown
+            Title: 1:1,000,000-Scale National Atlas map layers and other quality control files
+            Other_Citation_Details:
+              Numerous sources were used to perform quality-control and vertical integration, including all 
+              the 1:1,000,000-scale National Atlas map layers, a variety of online sources, and online USGS 
+              topographic maps.  More information is available from the National Atlas contacts listed 
+              elsewhere in this metadata.
+        Type_of_Source_Media: Variable
+        Source_Time_Period_of_Content: 
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: Unknown
+          Source_Currentness_Reference: Variable
+        Source_Citation_Abbreviation: QC
+        Source_Contribution: Spatial information
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: National Atlas of the United States
+            Publication_Date: 201207
+            Title: 1:1,000,000-Scale Coastline of the United States
+            Edition: 1
+            Publication_Information:
+              Publication_Place: Rolla, MO
+              Publisher: National Atlas of the United States
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 201207
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: National Atlas 1:1M Coastline 2012
+        Source_Contribution: Spatial and attribute information
+
+      Source_Information:
+        Source_Citation:
+          Citation_Information:
+            Originator: 
+              Government of Canada, Natural Resources Canada, Earth Sciences Sector, Canada Centre for 
+              Mapping and Earth Observation
+            Publication_Date: 20131108
+            Title: Atlas of Canada National Scale Data 1:1,000,000 – Coasts and Coastal Islands
+            Geospatial_Data_Presentation_Form: Vector digital data
+            Online_Linkage: 
+              http://geogratis.gc.ca/api/en/nrcan-rncan/ess-sst/f030716b-2fdb-5468-8dd8-03a958683b9d.html
+        Source_Scale_Denominator: 1000000
+        Type_of_Source_Media: Online
+        Source_Time_Period_of_Content:
+          Time_Period_Information:
+            Single_Date/Time:
+              Calendar_Date: 20131108
+          Source_Currentness_Reference: Publication date
+        Source_Citation_Abbreviation: Canada Coasts and Islands
+        Source_Contribution: Spatial information
+
+      Source_Information: 
+        Source_Citation:
+          Citation_Information:
+            Originator: Government of Canada, Natural Resources Canada, Mapping Information Branch
+            Publication_Date: Unknown
+            Title: National Topographic System Maps (1:250 000)
+            Publication_Information: 
+              Publication_Place: Ottawa, Ontario, Canada 
+              Publisher: Government of Canada 
+        Source_Scale_Denominator: 250000 
+        Type_of_Source_Media: Variable
+        Source_Time_Period_of_Content:
+          Time_Period_Information: 
+            Range_of_Dates/Times: 
+              Beginning_Date: 1945 
+              Ending_Date: Present 
+          Source_Currentness_Reference: Ground condition
+        Source_Citation_Abbreviation: Canada 250K Topo
+        Source_Contribution:  Positional reference 
+
+      Process_Step:
+        Process_Description: 
+          The National boundary polygon was converted to a polyline and edited to show only the coastline 
+          and the U.S. shoreline of the Great Lakes.
+        Source_Used_Citation_Abbreviation: 1MBound
+        Process_Date: 2007
+
+      Process_Step:
+        Process_Description:
+          All the 1:1,000,000-scale map layers were checked for vertical integration.  Line positions were 
+          adjusted as necessary to remove overlaps.  Wherever possible, linear features were separated 
+          by 300 meters, but were kept within 500 meters of their true location.
+        Source_Used_Citation_Abbreviation: QC
+        Process_Date: 2012
+        Source_Produced_Citation_Abbreviation: National Atlas 1:1M Coastline 2012
+
+      Process_Step:
+        Process_Description:
+          Data along the Canadian border were adjusted so that the Canadian and U.S. 1:1,000,000-scale data 
+          sets can be used together as seamlessly as possible.  Problem areas were identified by Natural 
+          Resources Canada (NRCan) and edits to the U.S. data were performed by the USGS.
+
+          To identify problems, the National Atlas 1:1M Coastline 2012 data set was projected to the NRCan 
+          working coordinate system, which is a Lambert Conformal Conic projection with standard parallels 
+          of 49 and 77 degrees, datum of NAD83, an XY tolerance of 0.001 meters, and an XY resolution 
+          of 0.0001 meters.  
+ 
+          The Canadian and U.S. data sets were displayed together and features were compared across the 
+          border.  An initial set of comments and suggestions for edits were sent to the USGS by NRCan.  
+          NRCan used satellite imagery for reference during the editing process by converting the 
+          appropriate National Atlas 1:1,000,000-scale map layers and the 250K Canadian topographic data to 
+          KML and loading the KMLs into GoogleEarth.  Using the cursor coordinates in the ArcMap status 
+          bar, NRCan visually navigated and correlated the ArcMap and GoogleEarth vectors.
+
+          NRCan exported their findings and sent them to the USGS for correction and (or) further comment.  
+          USGS reviewed the Canadian findings and returned the data to NRCan with comments.  The U.S. data 
+          were either edited, not edited and further explanation was requested, or not edited and changes 
+          were suggested for the Canadian data.  This process was repeated until both NRCan and USGS felt 
+          that the data were satisfactorily harmonized.
+        Source_Used_Citation_Abbreviation: National Atlas 1:1M Coastline 2012
+        Source_Used_Citation_Abbreviation: QC
+        Source_Used_Citation_Abbreviation: Canada Coasts and Islands
+        Source_Used_Citation_Abbreviation: Canada 250K Topo
+        Process_Date: 201301
+
+  Spatial_Data_Organization_Information:
+    Direct_Spatial_Reference_Method: Vector
+    Point_and_Vector_Object_Information:
+      SDTS_Terms_Description:
+        SDTS_Point_and_Vector_Object_Type: String
+        Point_and_Vector_Object_Count: 3099 
+
+  Spatial_Reference_Information:
+    Horizontal_Coordinate_System_Definition:
+      Geographic:
+        Latitude_Resolution: 0.000278
+        Longitude_Resolution: 0.000278
+        Geographic_Coordinate_Units: Decimal degrees
+      Geodetic_Model:
+        Horizontal_Datum_Name: North American Datum of 1983
+        Ellipsoid_Name: GRS1980
+        Semi-major_Axis: 6378137
+        Denominator_of_Flattening_Ratio: 298.257222
+
+  Entity_and_Attribute_Information:
+    Detailed_Description: 
+      Entity_Type: 
+        Entity_Type_Label: Coastline 
+        Entity_Type_Definition: 
+          A line showing where open water and land governed by the United States meet.
+        Entity_Type_Definition_Source: National Atlas of the United States
+      Attribute: 
+        Attribute_Label: Shape 
+        Attribute_Definition: The representation of the entity in the data.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values: 
+          Enumerated_Domain: 
+            Enumerated_Domain_Value: Polyline 
+            Enumerated_Domain_Value_Definition: 
+              A 1-dimensional element that may or may not surround a 2-dimensional element.
+            Enumerated_Domain_Value_Definition_Source: ESRI GIS software 
+      Attribute: 
+        Attribute_Label: Coastln010
+        Attribute_Definition: Internal sequence number.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 1
+            Range_Domain_Maximum: 3100
+      Attribute: 
+        Attribute_Label: Miles
+        Attribute_Definition: The length of the coastline segment, in miles.
+        Attribute_Definition_Source: National Atlas of the United States
+        Attribute_Domain_Values:
+          Range_Domain:
+            Range_Domain_Minimum: 0.24343528147
+            Range_Domain_Maximum: 8401.08968055000
+
+  Distribution_Information:
+    Distributor:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: Earth Explorer, U.S. Geological Survey
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 47914 252nd Street
+          City: Sioux Falls
+          State_or_Province: SD
+          Postal_Code: 57198-0001
+        Contact_Voice_Telephone: 605-594-6116
+        Contact_Voice_Telephone: 866-573-3222
+        Contact_Electronic_Mail_Address: custserv@usgs.gov
+    Distribution_Liability:
+      Although these data have been processed successfully on a computer system at the U.S. Geological 
+      Survey, no warranty expressed or implied is made by the U.S. Geological Survey regarding the utility 
+      of the data on any other system, nor shall the act of distribution constitute any such warranty.  No 
+      responsibility is assumed by the U.S. Geological Survey in the use of these data.
+    Standard_Order_Process:
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI Shapefile
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+      Digital_Form:
+        Digital_Transfer_Information:
+          Format_Name: ESRI File Geodatabase 10.0
+        Digital_Transfer_Option:
+          Online_Option:
+            Computer_Contact_Information:
+              Network_Address:
+                Network_Resource_Name: http://nationalatlas.gov/atlasftp-1m.html
+
+      Fees: None
+
+  Metadata_Reference_Information:
+    Metadata_Date: 20140314
+    Metadata_Contact:
+      Contact_Information:
+        Contact_Organization_Primary:
+          Contact_Organization: National Atlas of the United States
+        Contact_Address:
+          Address_Type: Mailing address
+          Address: U.S. Geological Survey
+          Address: 511 National Center
+          Address: 12201 Sunrise Valley Drive 
+          City: Reston
+          State_or_Province: VA
+          Postal_Code: 20192
+        Contact_Voice_Telephone: 1-888-ASK-USGS (1-888-275-8747)
+        Contact_Electronic_Mail_Address: atlasmail@usgs.gov
+    Metadata_Standard_Name: FGDC Content Standard for Digital Geospatial Metadata
+    Metadata_Standard_Version: FGDC-STD-001-1998
+    Metadata_Security_Information:
+      Metadata_Security_Classification_System: None
+      Metadata_Security_Classification: Unclassified
+      Metadata_Security_Handling_Description: None
