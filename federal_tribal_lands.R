@@ -85,10 +85,11 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
     Agency == "BLM" ~ "BLM Wilderness"
   ))
 
-#hydro https://www.sciencebase.gov/catalog/item/581d0552e4b08da350d5274e
-#streams <- st_read("data/hydro/hydrusm010g.gdb", layer = "Stream")
-lake_data <- st_read("data/hydro/hydrusm010g.gdb", layer = "Waterbody") |> 
-  filter(Area_sq_mi > .25) |> 
+# hydro https://www.sciencebase.gov/catalog/item/581d0552e4b08da350d5274e
+# whole hydro database is too big for github (> 100 MB), so download, read GDB then write to SHP
+# lake_data <- st_read("data/hydro/hydrusm010g.gdb", layer = "Waterbody")
+# st_write(lake_data_raw, "data/hyrdo/lakes.shp")
+lake_data <- st_read("data/hydro/lakes.shp") |> 
   shift_geometry() |>
   st_transform(epsg_aea)
 
@@ -120,7 +121,7 @@ map_theme <- theme(axis.line=element_blank(),
                    panel.border=element_blank(),
                    panel.grid=element_blank(),
                    panel.spacing=unit(0, "lines"),
-                   plot.background=element_blank(),
+                   plot.background = element_rect(colour = "white"),
                    legend.justification = c(0,0),
                    legend.position = c(0,0)
 )
@@ -142,3 +143,4 @@ us <- ggplot() +
 
 
 ggsave("figures/us_use_map.pdf", us, width = 17, height = 11, units = "in")
+ggsave("figures/us_use_map.png", us, width = 17, height = 11, units = "in")
