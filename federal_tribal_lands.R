@@ -38,14 +38,24 @@ fed <- st_read("data/fedland/fedlanp010g.shp", "fedlanp010g") |>
 fed_all <- fed |>
   mutate(use = case_when(
     ADMIN1 == "DOD" ~ "Military",
-    ADMIN1 == "FS" & FEATURE1 != "National Grassland" ~ "Forest Service",
-    ADMIN1 == "FS" & FEATURE1 == "National Grassland" ~ "National Grassland",
+    #ADMIN1 == "FS" & FEATURE1 != "National Grassland" ~ "Forest Service",
+    #ADMIN1 == "FS" & FEATURE1 == "National Grassland" ~ "National Grassland",
     ADMIN1 == "FWS" ~ "Fish and Wildlife",
     ADMIN1 == "BLM" ~ "BLM",
     ADMIN1 == "NPS" ~ "National Park",
     ADMIN1 == "DOE" ~ "Department of Energy",
     ADMIN1 == "NASA" ~ "NASA",
     !(ADMIN1 %in% c("DOD", "FS", "FWS", "BLM", "NPS", "DOE", "NASA")) ~ "Other"
+  )) |> filter(!is.na(use))
+
+#Forest Service from https://data.fs.usda.gov/geodata/edw/datasets.php?dsetCategory=boundaries
+fs <- st_read("data/forest/S_USA.FSCommonNames.shp") |>
+  shift_geometry() |>
+  st_transform(epsg_aea) |>
+  mutate(use = case_when(
+    ADMINTYPE == "National Forest" ~ "Forest Service",
+    ADMINTYPE == "National Grassland Simplified" ~ "National Grassland (Border)",
+    ADMINTYPE == "National Grassland" ~ "National Grassland",
   )) |> filter(!is.na(use))
 
 # colors from https://www.ntc.blm.gov/krc/uploads/223/Ownership_Map_Color_Reference_Sheet.pdf
@@ -60,7 +70,8 @@ colors <- c("Indian Reservation" = rgb(253,180,108, maxColorValue = 255),
             "Forest Service Wilderness" = rgb(153,213,148, maxColorValue = 255),
             "National Park" =  rgb(202,189,220, maxColorValue = 255),
             "National Park Wilderness" = rgb(177,137,193, maxColorValue = 255),
-            "National Grassland" = rgb(230,245,177, maxColorValue = 255),
+            "National Grassland (Border)" = rgb(230,245,177, maxColorValue = 255),
+            "National Grassland" = rgb(220,225,157, maxColorValue = 255),
             "NASA" = "red",
             "Department of Energy" = "#FB9A99",
             "Lake" = "#33CCFF",
@@ -83,7 +94,7 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
     Agency == "NPS" ~ "National Park Wilderness",
     Agency == "FWS" ~ "Fish and Wildlife Wilderness",
     Agency == "BLM" ~ "BLM Wilderness"
-  ))
+  )) 
 
 # hydro https://www.sciencebase.gov/catalog/item/581d0552e4b08da350d5274e
 # whole hydro database is too big for github (> 100 MB), so download, read GDB then write to SHP
@@ -132,6 +143,8 @@ us <- ggplot() +
   geom_sf(data = res_data, linetype = 0, fill = colors["Indian Reservation"]) +
   geom_sf(data = urban_area_data, fill = colors["Urban Area"], linetype = 0) +
   geom_sf(mapping = aes(fill = use), data = fed_all |> filter(use != "BLM"), linetype = 0) + 
+  geom_sf(data = fs |> filter(use == "National Grassland (Border)"), linetype = 0, fill = colors["National Grassland (Border)"], ) +
+  geom_sf(mapping = aes(fill = use), data = fs |> filter(use != "National Grassland (Border)"), linetype = 0) +
   geom_sf(mapping = aes(fill = use), data = wild, linetype = 0) + 
   geom_sf(data = lakes, linetype = 0, fill = colors["Lake"]) +
   geom_sf(data = dry_lakes, size = .05, color = colors["Lake"], fill = colors["Dry Lake"]) + 
