@@ -75,6 +75,7 @@ colors <- c("Indian Reservation" = rgb(253,180,108, maxColorValue = 255),
             "Lake" = "#33CCFF",
             "Dry Lake" = "#33CCFF33",
             "Urban Area" = "grey70",
+            "State" = rgb(179,227,238, maxColorValue = 255),
             "Other" = rgb(228,196,159, maxColorValue = 255)
 )
 # from https://biamaps.doi.gov/bogs/datadownload.html
@@ -93,6 +94,13 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
     Agency == "FWS" ~ "Fish and Wildlife Wilderness",
     Agency == "BLM" ~ "BLM Wilderness"
   )) 
+
+# whole state database is too big for github (> 100 MB), so download, read GDB then write to SHP
+# sogr2ogr data/state/state.shp data/blm/sma_wm.gdb "SurfaceMgtAgy_STATE" 
+state_data <- st_read("data/state/state.shp") |>
+  shift_geometry() |>
+  st_transform(epsg_aea)
+
 
 # hydro https://www.sciencebase.gov/catalog/item/581d0552e4b08da350d5274e
 # whole hydro database is too big for github (> 100 MB), so download, read GDB then write to SHP
@@ -144,6 +152,7 @@ us <- ggplot() +
   geom_sf(data = fs |> filter(use == "National Grassland (Border)"), linetype = 0, fill = colors["National Grassland (Border)"], ) +
   geom_sf(mapping = aes(fill = use), data = fs |> filter(use != "National Grassland (Border)"), linetype = 0) +
   geom_sf(mapping = aes(fill = use), data = wild, linetype = 0) + 
+  geom_sf(data = state_data, linetype = 0, fill = colors["State"]) +
   geom_sf(data = lakes, linetype = 0, fill = colors["Lake"]) +
   geom_sf(data = dry_lakes, size = .05, color = colors["Lake"], fill = colors["Dry Lake"]) + 
   geom_sf(data = great_lake_data, linetype = 0, fill = colors["Lake"]) + 
