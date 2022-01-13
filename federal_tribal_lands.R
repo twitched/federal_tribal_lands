@@ -38,8 +38,6 @@ fed <- st_read("data/fedland/fedlanp010g.shp", "fedlanp010g") |>
 fed_all <- fed |>
   mutate(use = case_when(
     ADMIN1 == "DOD" ~ "Military",
-    #ADMIN1 == "FS" & FEATURE1 != "National Grassland" ~ "Forest Service",
-    #ADMIN1 == "FS" & FEATURE1 == "National Grassland" ~ "National Grassland",
     ADMIN1 == "FWS" ~ "Fish and Wildlife",
     ADMIN1 == "BLM" ~ "BLM",
     ADMIN1 == "NPS" ~ "National Park",
