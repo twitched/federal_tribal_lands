@@ -30,7 +30,7 @@ urban_area_data <- urban_areas(cb = TRUE) |> #get counties at 1:1,000,000 resolu
   st_transform(epsg_aea) 
 
 #https://www.sciencebase.gov/catalog/item/5d150464e4b0941bde5b7653
-fed <- st_read("data/fedland/fedlanp010g.shp", "fedlanp010g") |>
+fed <- st_read("data/fedland/fedlanp010g.shp") |>
   filter(STATE != "VI") |> #remove the territories
   shift_geometry() |>
   st_transform(epsg_aea) #|> 
@@ -138,19 +138,20 @@ map_theme <- theme(axis.line=element_blank(),
                    panel.border=element_blank(),
                    panel.grid=element_blank(),
                    panel.spacing=unit(0, "lines"),
-                   plot.background = element_rect(colour = "white"),
+                   plot.background = element_rect(fill = "lightcyan"),
                    legend.justification = c(0,0),
                    legend.position = c(0,0)
 )
 
 us <- ggplot() +
+  geom_sf(data = states_data, fill = "White", linetype = 0) +
   geom_sf(data = fed_all |> filter(use == "BLM"), linetype = 0, fill = colors["BLM"]) + #BLM needs to be first so reservations can go on top
   geom_sf(data = fed_all |> filter(use == "BLM", FEATURE1 == "National Monument"), size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"]) +
   geom_sf(data = res_data, linetype = 0, fill = colors["Indian Reservation"]) +
   geom_sf(data = urban_area_data, fill = colors["Urban Area"], linetype = 0) +
-  geom_sf(mapping = aes(fill = use), data = fed_all |> filter(use != "BLM"), linetype = 0) + 
   geom_sf(data = fs |> filter(use == "National Grassland (Border)"), linetype = 0, fill = colors["National Grassland (Border)"], ) +
   geom_sf(mapping = aes(fill = use), data = fs |> filter(use != "National Grassland (Border)"), linetype = 0) +
+  geom_sf(mapping = aes(fill = use), data = fed_all |> filter(use != "BLM"), linetype = 0) + 
   geom_sf(mapping = aes(fill = use), data = wild, linetype = 0) + 
   geom_sf(data = state_data, linetype = 0, fill = colors["State"]) +
   geom_sf(data = lakes, linetype = 0, fill = colors["Lake"]) +
@@ -162,5 +163,5 @@ us <- ggplot() +
   map_theme
 
 
-ggsave("figures/us_use_map.pdf", us, width = 17, height = 11, units = "in")
+ggsave("figures/us_use_map.pdf", us, width = 24, height = 18, units = "in")
 ggsave("figures/us_use_map.png", us, width = 17, height = 11, units = "in")
