@@ -96,7 +96,7 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
   )) 
 
 # whole state database is too big for github (> 100 MB), so download, read GDB then write to SHP
-# sogr2ogr data/state/state.shp data/blm/sma_wm.gdb "SurfaceMgtAgy_STATE" 
+# ogr2ogr data/state/state.shp data/blm/sma_wm.gdb "SurfaceMgtAgy_STATE" 
 state_data <- st_read("data/state/state.shp") |>
   shift_geometry() |>
   st_transform(epsg_aea)
