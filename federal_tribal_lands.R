@@ -1,6 +1,8 @@
 library(tidyverse)
 library(sf)
 library(tigris)
+library(ggpattern)
+library(colorspace)
 
 options(tigris_use_cache = TRUE)
 epsg_aea = 5070 #EPSG number for CONUS Albers Equal Area Projection https://epsg.io/5070-1252
@@ -23,7 +25,7 @@ counties_data <- counties_tigris |>
   st_transform(epsg_aea)
 
 #Urban Areas from tigris
-urban_area_data <- urban_areas(cb = TRUE) |> #get counties at 1:1,000,000 resolutiona
+urban_area_data <- urban_areas() |> 
   separate(NAME10, sep = ', ', into = c("City", "State")) |>
   filter(!(State %in% c("GU", "MP", "AS", "VI"))) |> #remove the territories
   shift_geometry() |>  
@@ -95,6 +97,7 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
     Agency == "BLM" ~ "BLM Wilderness"
   )) 
 
+# https://landscape.blm.gov/geoportal/catalog/search/resource/details.page?uuid=%7B2A8B8906-7711-4AF7-9510-C6C7FD991177%7D
 # whole state database is too big for github (> 100 MB), so download, read GDB then write to SHP
 # ogr2ogr data/state/state.shp data/blm/sma_wm.gdb "SurfaceMgtAgy_STATE" 
 state_data <- st_read("data/state/state.shp") |>
@@ -143,16 +146,29 @@ map_theme <- theme(axis.line=element_blank(),
                    legend.position = c(0,0)
 )
 
-mon_stripes <- fed_all |> filter(use == "BLM", FEATURE1 == "National Monument") |> 
-  select(geometry) |> 
-  st_make_valid() |> 
-  cartography::hatchedLayer(pattern="right2left", mode='sfc', density = 20)
+#mon_stripes <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")) |> 
+# mon_stripes <- fed_all |> filter(FEATURE1 %in% c("National Monument", "National Conservation Area")) |> 
+#   select(geometry) |> 
+#   st_make_valid() |> 
+#   cartography::hatchedLayer(pattern="right2left", mode='sfc', density = 20)
+
+monuments <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area"))
 
 us <- ggplot() +
   geom_sf(data = states_data, fill = "White", linetype = 0) +
   geom_sf(data = fed_all |> filter(use == "BLM"), linetype = 0, fill = colors["BLM"]) + #BLM needs to be first so reservations can go on top
-  geom_sf(data = fed_all |> filter(use == "BLM", FEATURE1 == "National Monument"), size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"]) +
-  geom_sf(data = mon_stripes, color = colors["BLM National Monument (Border)"], size = .2) +
+  geom_sf(data = fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")), size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"]) +
+  # geom_sf_pattern(data = fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")), 
+  #                 size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"],
+  #                 pattern_size = 0.1, pattern_spacing = 0.005) +
+  
+  geom_sf(data = monuments, color = colors["BLM National Monument (Border)"], size = .1, linejoin = "mitre") +
+  #Create inner glow on monuments (https://www.katiejolly.io/blog/2020-03-06/inner-glow)
+  geom_sf(data = monuments |> st_buffer(-500, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .1), color = NA) +
+  geom_sf(data = monuments |> st_buffer(-1000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .2), color = NA) +
+  geom_sf(data = monuments |> st_buffer(-2000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .3), color = NA) +
+  geom_sf(data = monuments |> st_buffer(-4000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .4), color = NA) +
+  #geom_sf(data = mon_stripes, color = colors["BLM National Monument (Border)"], size = .2) +
   geom_sf(data = res_data, linetype = 0, fill = colors["Indian Reservation"]) +
   geom_sf(data = urban_area_data, fill = colors["Urban Area"], linetype = 0) +
   geom_sf(data = fs |> filter(use == "National Grassland (Border)"), linetype = 0, fill = colors["National Grassland (Border)"], ) +
@@ -170,4 +186,5 @@ us <- ggplot() +
 
 
 ggsave("figures/us_use_map.pdf", us, width = 17, height = 11, units = "in")
+ggsave("figures/us_use_map.svg", us, width = 17, height = 11, units = "in")
 ggsave("figures/us_use_map.png", us, width = 17, height = 11, units = "in")
