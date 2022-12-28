@@ -59,26 +59,26 @@ fs <- st_read("data/forest/S_USA.FSCommonNames.shp") |>
   )) |> filter(!is.na(use))
 
 # colors from https://www.ntc.blm.gov/krc/uploads/223/Ownership_Map_Color_Reference_Sheet.pdf
-colors <- c("Indian Reservation" = rgb(253,180,108, maxColorValue = 255),
-            "BLM" =  rgb(254,230,121, maxColorValue = 255),
-            "BLM Wilderness" = rgb(254,204,92, maxColorValue = 255),
-            "BLM National Monument (Border)" = rgb(250,195,80, maxColorValue = 255),
-            "Military" =  rgb(251,180,206, maxColorValue = 255),
-            "Fish and Wildlife" = rgb(127,204,16, maxColorValue = 255),
-            "Fish and Wildlife Wilderness" = rgb(102,191,127, maxColorValue = 255),
-            "Forest Service" = rgb(204,235,197, maxColorValue = 255),
-            "Forest Service Wilderness" = rgb(153,213,148, maxColorValue = 255),
-            "National Park" =  rgb(202,189,220, maxColorValue = 255),
-            "National Park Wilderness" = rgb(177,137,193, maxColorValue = 255),
-            "National Grassland (Border)" = rgb(230,245,177, maxColorValue = 255),
-            "National Grassland" = rgb(220,225,157, maxColorValue = 255),
+colors <- c("Indian Reservation" = "#FDB46C",
+            "BLM" =  "#FEE679",
+            "BLM Wilderness" = "#FECC5C",
+            "BLM National Monument" = "#FFDAA3",
+            "Military" =  "#FBB4CE",
+            "Fish and Wildlife" = "#7FCC10",
+            "Fish and Wildlife Wilderness" = "#66BF7F",
+            "Forest Service" = "#CCEBC5",
+            "Forest Service Wilderness" = "#99D594",
+            "National Park" =  "#CABDDC",
+            "National Park Wilderness" = "#B189C1",
+            "National Grassland (Border)" = "#E6F5B1",
+            "National Grassland" = "#DCE19D",
             "NASA" = "red",
             "Department of Energy" = "#FB9A99",
             "Lake" = "#33CCFF",
             "Dry Lake" = "#33CCFF33",
             "Urban Area" = "grey70",
-            "State" = rgb(179,227,238, maxColorValue = 255),
-            "Other" = rgb(228,196,159, maxColorValue = 255)
+            "State" = "#B3E3EE",
+            "Other" = "#E4C49F"
 )
 # from https://biamaps.doi.gov/bogs/datadownload.html
 res_data <- st_read("data/reservations/BIA_National_LAR.shp") |>
