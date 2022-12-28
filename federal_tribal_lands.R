@@ -146,29 +146,12 @@ map_theme <- theme(axis.line=element_blank(),
                    legend.position = c(0,0)
 )
 
-#mon_stripes <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")) |> 
-# mon_stripes <- fed_all |> filter(FEATURE1 %in% c("National Monument", "National Conservation Area")) |> 
-#   select(geometry) |> 
-#   st_make_valid() |> 
-#   cartography::hatchedLayer(pattern="right2left", mode='sfc', density = 20)
-
 monuments <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area"))
 
 us <- ggplot() +
   geom_sf(data = states_data, fill = "White", linetype = 0) +
   geom_sf(data = fed_all |> filter(use == "BLM"), linetype = 0, fill = colors["BLM"]) + #BLM needs to be first so reservations can go on top
-  geom_sf(data = fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")), size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"]) +
-  # geom_sf_pattern(data = fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area")), 
-  #                 size = .1, fill = colors["BLM"], colour = colors["BLM National Monument (Border)"],
-  #                 pattern_size = 0.1, pattern_spacing = 0.005) +
-  
-  geom_sf(data = monuments, color = colors["BLM National Monument (Border)"], size = .1, linejoin = "mitre") +
-  #Create inner glow on monuments (https://www.katiejolly.io/blog/2020-03-06/inner-glow)
-  geom_sf(data = monuments |> st_buffer(-500, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .1), color = NA) +
-  geom_sf(data = monuments |> st_buffer(-1000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .2), color = NA) +
-  geom_sf(data = monuments |> st_buffer(-2000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .3), color = NA) +
-  geom_sf(data = monuments |> st_buffer(-4000, endCapStyle="SQUARE", joinStyle="MITRE", mitreLimit=3, nQuadSegs= 1), fill = lighten(colors["BLM National Monument (Border)"], .4), color = NA) +
-  #geom_sf(data = mon_stripes, color = colors["BLM National Monument (Border)"], size = .2) +
+  geom_sf(data = monuments, linetype = 0, fill = colors["BLM National Monument"]) +
   geom_sf(data = res_data, linetype = 0, fill = colors["Indian Reservation"]) +
   geom_sf(data = urban_area_data, fill = colors["Urban Area"], linetype = 0) +
   geom_sf(data = fs |> filter(use == "National Grassland (Border)"), linetype = 0, fill = colors["National Grassland (Border)"], ) +
