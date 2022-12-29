@@ -97,7 +97,15 @@ wild <- st_read("data/wilderness/Wilderness_Areas_071921.shp") |>
     Agency == "BLM" ~ "BLM Wilderness"
   )) 
 
-# https://landscape.blm.gov/geoportal/catalog/search/resource/details.page?uuid=%7B2A8B8906-7711-4AF7-9510-C6C7FD991177%7D
+#TODO: try https://gbp-blm-egis.hub.arcgis.com/datasets/BLM-EGIS::blm-natl-nlcs-national-monuments-national-conservation-areas-polygons/explore?location=40.109851%2C-111.153496%2C7.02
+# for monuments
+# Problem when reading solved with 
+# ogr2ogr -dim XY -progress data/blm/monuments.gpkg /data/blm/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons/BLM_Natl_NLCS_National_Monuments_National_Conservation_Areas_Polygons.shp
+monuments <- st_read("data/blm/monuments.gpkg") |> 
+  shift_geometry() |>
+  st_transform(epsg_aea)
+
+# https://landscape.blm.gov/geoportal/catalog/search/resource/details.page?uuid=2A8B8906-7711-4AF7-9510-C6C7FD991177
 # whole state database is too big for github (> 100 MB), so download, read GDB then write to SHP
 # ogr2ogr data/state/state.shp data/blm/sma_wm.gdb "SurfaceMgtAgy_STATE" 
 state_data <- st_read("data/state/state.shp") |>
@@ -146,7 +154,7 @@ map_theme <- theme(axis.line=element_blank(),
                    legend.position = c(0,0)
 )
 
-monuments <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area"))
+#monuments <- fed_all |> filter(use == "BLM", FEATURE1 %in% c("National Monument", "National Conservation Area"))
 
 us <- ggplot() +
   geom_sf(data = states_data, fill = "White", linetype = 0) +
